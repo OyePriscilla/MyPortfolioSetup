@@ -28,12 +28,12 @@ How to use a Computer
 ## Deployment
 
 ## Author
-* GitHub: @OyePriscilla
+* GitHub: Github: [OyePriscilla](https://github.com/OyePriscilla)
 
 ## Contibution
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
 ## Acknowledgments
 Hat tip to the person that reviewed my work! Thanks alot.
