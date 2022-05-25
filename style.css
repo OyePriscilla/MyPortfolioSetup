@@ -1,0 +1,120 @@
+/* General style */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Central wrapper that holds all content styling */
+.central-wrapper{
+  display: flex;
+  height: 812px;
+  width: 375px;
+  left: 12395px;
+  top: -1883px;
+  border-radius: 0px;
+  flex-direction: column;  
+}
+
+/* header */
+.header-class {
+  height: 48px;
+  width: 375px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;    
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* My Logo style */
+.logo-text{
+  color: #6070FF;
+  width: 76px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* main section style */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 24px;
+  gap: 12px;    
+  position: absolute;
+  width: 375px;
+  height: 604px;    
+  top: 48px;    
+  background-image: url(resources/img/header-shapes\ mobile.png);  
+  padding-top: 92px;
+}
+
+/* Name h2 style */
+.name {
+  font-size: 40px;
+}
+
+/* Self introduction style */
+.self-intro {
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  color: #344563;    
+}
+
+/* Media icons */
+.social-media-icons {
+  height: 20.000062942504883px;
+  width: 170.1666717529297px;
+  left: 24px;
+  top: 470px;
+  border-radius: 0px;  
+  display: flex;
+  justify-content: space-between;   
+}
+
+/* Let's connect style */
+.social-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;    
+  width: 140px;
+  height: 24px; 
+  color: #7F8CFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* social media icon size */
+.social-media-icons img {
+  height: 19.962478637695312px;
+  width: 19.985925674438477px;
+  left: 24px;
+  top: 470px;
+  border-radius: 0px; 
+  flex: none;
+  order: 3;
+  flex-grow: 0;    
+}
+
