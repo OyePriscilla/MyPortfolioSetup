@@ -22,7 +22,7 @@
                 <a href="#"><img src="resources/img/download (2).png" alt=""></a>
                 <a href="#"><img src="resources/img/download (3).png" alt=""></a>
                 <a href="#"><img src="resources/img/download (4).png" alt=""></a>
-                <a href="#"><img src="resources/img/download.png" alt=""></a>
+                
             </div>
         </div>
         </main>
