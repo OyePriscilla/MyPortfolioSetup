@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -17,13 +16,24 @@ a:hover {
   cursor: pointer;
 }
 
+.general-container {
+  display: flex;
+  flex-direction: column;
+  height: 5410px;
+  width: 375px;
+  left: 11282px;
+  top: -1883px;
+  border-radius: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* Central wrapper that holds all content styling */
 .central-wrapper {
   display: flex;
   height: 812px;
   width: 375px;
   left: 12395px;
-  top: -1883px;
   border-radius: 0;
   flex-direction: column;
   margin: 0 auto;
@@ -68,7 +78,7 @@ a:hover {
   position: absolute;
   width: 375px;
   height: 604px;
-  top: 48px;
+  top: 24px;
   background-image: url(resources/img/header-shapes\ mobile.png);
   padding-top: 92px;
 }
@@ -100,6 +110,7 @@ a:hover {
   border-radius: 0;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 /* Let's connect style */
@@ -128,4 +139,254 @@ a:hover {
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+
+/* main element houses the four sections and it was display as grid according to requirement. */
+main {
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 552px 552px 552px 552px;
+  row-gap: 28px;
+  left: 0;
+  top: 718px;
+  background-color: rgba(243, 243, 243, 0.5);
+  margin: 0 auto;
+  width: 375px;
+  height: 2450px;
+}
+
+/* individual section display property is flex */
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 24px;
+  padding: 16px;
+  width: 327px;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* second section image properties */
+.snapshoot img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  border: 0;
+  flex-grow: 0;
+}
+
+/* second section title style */
+.block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* flex display, ul li used to list the items */
+.project-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 295px;
+  height: 80px;
+  flex: none;
+  justify-content: space-between;
+}
+
+.project-title ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 24px;
+  font-weight: 900;
+}
+
+.project-title a {
+  color: #344563;
+}
+
+.block-content p {
+  margin-top: 24px;
+}
+
+.list-style {
+  list-style-type: none;
+}
+
+.tonic {
+  width: 295px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #172b4d;
+  flex: none;
+}
+
+.tech-tools {
+  display: grid;
+  grid-template-columns: 53px 45px 89px;
+  column-gap: 15px;
+  font-weight: 900;
+  list-style: none;
+}
+
+.tech-tools button {
+  padding: 4px 12px;
+  margin: 16px 0;
+  height: 24px;
+  color: #6070ff;
+  border: none;
+  background: #ebebbf;
+  border-radius: 8px;
+}
+
+.tonic2 {
+  font-size: 34px;
+  width: 295px;
+  height: 80px;
+}
+
+.workss {
+  width: 375px;
+  height: 1000px;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f7f7f9;
+  background-image: url(resources/img/Baseaboutmyself.png);
+}
+
+/* .workss-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 375px;
+  height: 1200px;
+  background-image: url(resources/img/Baseaboutmyself.png);
+  position: absolute;
+  top: 3280px;
+  left: 0;
+} */
+
+.about-me {
+  height: 409px;
+  width: 327px;
+  left: 24px;
+  top: 114px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.about-me h1 {
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.about-me p {
+  font-size: 18px;
+}
+
+.connect {
+  margin-bottom: 16px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 24px;
+  height: 464.14678955078125px;
+  width: 327px;
+  border-radius: 0;
+}
+
+.tech-toolss {
+  list-style: none;
+}
+
+.tech-toolss li {
+  height: 66.7155990600586px;
+  width: 303px;
+  left: 12px;
+  top: 12px;
+  border-radius: 8px;
+  background: #f7f7f9;
+  margin-bottom: 12px;
+}
+
+.skill {
+  height: 66.7155990600586px;
+  width: 303px;
+  left: 12px;
+  top: 12px;
+  border-radius: 8px;
+  background: #f7f7f9;
+  margin-bottom: 12px;
+}
+
+.lang a {
+  font-size: 29px;
+  display: inline;
+  text-align: center;
+  color: black;
+}
+
+.lang span {
+  position: abolute;
+  right: 120px;
+}
+
+.listimg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.listimg a {
+  margin-left: 12px;
+  color: #000;
+}
+
+.formatting {
+  display: flex;
+  align-items: center;
+  color: #000;
+  height: 66.7155990600586px;
+  width: 303px;
+  left: 12px;
+  top: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: transparent;
+}
+
+.btt-arr {
+  margin-left: 100px;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+}
+
+.skill-margin {
+  margin-left: 160px;
+}
+
+/* border-bottom added to element */
+.framework {
+  border-bottom: 1px solid #c8c8ca;
 }
