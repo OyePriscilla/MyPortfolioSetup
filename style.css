@@ -17,13 +17,25 @@ a:hover {
   cursor: pointer;
 }
 
+.general-container {
+  display: flex;
+  flex-direction: column;
+  height: 5410px;
+  width: 375px;
+  left: 11282px;
+  top: -1883px;
+  border-radius: 0px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
 /* Central wrapper that holds all content styling */
 .central-wrapper {
   display: flex;
   height: 812px;
   width: 375px;
-  left: 12395px;
-  top: -1883px;
+  left: 12395px; 
   border-radius: 0;
   flex-direction: column;
   margin: 0 auto;
@@ -68,9 +80,9 @@ a:hover {
   position: absolute;
   width: 375px;
   height: 604px;
-  top: 48px;
+  top: 24px;
   background-image: url(resources/img/header-shapes\ mobile.png);
-  padding-top: 92px;
+  padding-top: 92px;  
 }
 
 /* Name h2 style */
@@ -131,26 +143,27 @@ a:hover {
   flex-grow: 0;
 }
 
-/* main element style */
+/* main element houses the four sections and 
+it was display as grid according to requirement. */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 375px;
-  height: 2788px;
+  display: grid;  
+  grid-template-columns: 375px;
+  grid-template-rows: 552px 552px 552px 552px;
+  row-gap: 28px;
   left: 0px;
   top: 718px;
   background-color: rgba(243, 243, 243, 0.5);
-  margin: 0 auto;
+  margin: 0 auto;  
+  width: 375px;
+  height: 2450px;
 }
 
+/* individual section display property is flex */
 .works {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 114px 24px;
-  gap: 12px;
+  margin: 50px 24px;
   padding: 16px;
   width: 327px;
   height: 552px;
@@ -162,6 +175,7 @@ main {
   flex-grow: 0;
 }
 
+/* second section image properties */
 .snapshoot img {
   width: 295px;
   height: 220px;
@@ -171,12 +185,14 @@ main {
   flex-grow: 0;
 }
 
+/* second section title style */
 .block-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
+/* flex display, ul li used to list the items */
 .project-title {
   display: flex;
   flex-direction: column;
@@ -233,4 +249,151 @@ main {
   border: none;
   background: #EBEBFF;
   border-radius: 8px;
+}
+
+.tonic2 {
+  font-size: 34px;
+  width: 295px;
+  height: 80px;
+}
+
+.workss {
+  width: 375px;
+  height: 1000px;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f7f7f9;
+  background-image: url(resources/img/Baseaboutmyself.png);
+}
+
+/* .workss-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 375px;
+  height: 1200px; 
+  background-image: url(resources/img/Baseaboutmyself.png);
+  position: absolute;
+  top: 3280px;
+  left: 0;
+} */
+
+.about-me { 
+  height: 409px;
+width: 327px;
+left: 24px;
+top: 114px;
+display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+flex-direction: column;
+}
+
+.about-me h1 {
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.about-me p {
+  font-size: 18px;
+}
+
+.connect {
+  margin-bottom: 16px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.tech-toolss {
+  list-style: none;
+}
+
+.skill-list {  
+  height: 464.14678955078125px;
+  width: 327px;
+  border-radius: 0px;
+}
+
+.tech-toolss li {
+  height: 66.7155990600586px;
+width: 303px;
+left: 12px;
+top: 12px;
+border-radius: 8px;
+background: #f7f7f9;
+margin-bottom: 12px;
+}
+
+.skill {
+  height: 66.7155990600586px;
+  width: 303px;
+  left: 12px;
+  top: 12px;
+  border-radius: 8px;
+  background: #f7f7f9;
+  margin-bottom: 12px;
+}
+
+.lang a {
+  font-size: 29px;  
+  display: inline;
+  text-align: center;
+  color: black;
+}
+
+.lang span {
+  position: abolute;
+  right: 120px;  
+}
+
+.listimg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.listimg a {
+  margin-left: 12px;
+  color: #000000;
+}
+
+.formatting {
+  display: flex;
+  align-items: center; 
+  color: #000000;
+  height: 66.7155990600586px;
+  width: 303px;
+  left: 12px;
+  top: 12px;
+  border-radius: 8px;
+  background: #f7f7f9;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: transparent;
+}
+
+.btt-arr {
+  margin-left: 100px;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+}
+
+.skill-margin {
+  margin-left: 160px;
+}
+
+/* border-bottom added to element */
+.framework {
+  border-bottom: 1px solid #c8c8ca ;
 }
