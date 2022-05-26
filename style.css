@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -100,6 +100,7 @@ a:hover {
   border-radius: 0;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 /* Let's connect style */
@@ -128,4 +129,108 @@ a:hover {
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+
+/* main element style */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 375px;
+  height: 2788px;
+  left: 0px;
+  top: 718px;
+  background-color: rgba(243, 243, 243, 0.5);
+  margin: 0 auto;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 114px 24px;
+  gap: 12px;
+  padding: 16px;
+  width: 327px;
+  height: 552px;
+  background: #ffffff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.snapshoot img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  border: 0;
+  flex-grow: 0;
+}
+
+.block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 295px;
+  height: 80px;
+  flex: none;
+  justify-content: space-between;
+}
+
+.project-title ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 24px;
+  font-weight: 900;
+}
+
+.project-title a {
+  color: #344563;
+}
+
+.block-content p {
+  margin-top: 24px; 
+}
+
+.list-style {
+  list-style-type: none;  
+}
+
+.tonic {  
+  width: 295px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #172b4d;
+  flex: none;
+}
+
+.tech-tools {
+  display: grid;
+  grid-template-columns: 53px 45px 89px;
+  column-gap: 15px;
+  font-weight: 900;
+  list-style: none;
+}
+
+.tech-tools button {
+  padding: 4px 12px;
+  margin: 16px 0;
+  height: 24px;
+  color: #6070ff;
+  border: none;
+  background: #EBEBFF;
+  border-radius: 8px;
 }
