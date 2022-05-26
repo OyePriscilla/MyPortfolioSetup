@@ -2,8 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  
-  /* list-style: none; */
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -310,16 +308,13 @@ main {
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 24px;
+  height: 464.14678955078125px;
+  width: 327px;
+  border-radius: 0;
 }
 
 .tech-toolss {
   list-style: none;
-}
-
-.skill-list {
-  height: 464.14678955078125px;
-  width: 327px;
-  border-radius: 0;
 }
 
 .tech-toolss li {
@@ -374,7 +369,6 @@ main {
   left: 12px;
   top: 12px;
   border-radius: 8px;
-  background-color: #f7f7f9;
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: bolder;
