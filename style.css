@@ -55,7 +55,7 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 /* main section style */
