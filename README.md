@@ -1,5 +1,5 @@
-# Hello-World
-This Project is created purposely to learn how to build Portfolio
+# MyPortfolio Project
+This Project is created purposely to learn how to build Portfolio.
 
 ## Built With
 * VsCode
