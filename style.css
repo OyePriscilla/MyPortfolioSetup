@@ -237,11 +237,15 @@ main {
 }
 
 .tech-tools {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 53px 45px 89px;
-  column-gap: 15px;
+  column-gap: 15px; */
   font-weight: 900;
   list-style: none;
+}
+
+.tech-tools li {
+  float: left;
 }
 
 .tech-tools button {
