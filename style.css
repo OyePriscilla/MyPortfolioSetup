@@ -246,6 +246,7 @@ main {
 
 .tech-tools li {
   float: left;
+  margin-right: 12px;
 }
 
 .tech-tools button {
