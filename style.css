@@ -7,13 +7,12 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   width: 375px;
   margin: auto auto;
 }
 
 .contain {
-  
 }
 
 /* all link element style */
@@ -249,6 +248,10 @@ main {
   margin-right: 12px;
 }
 
+.tech-tools li:last-child {
+  margin-right: 0;
+}
+
 .tech-tools button {
   padding: 4px 12px;
   margin: 16px 0;
@@ -409,23 +412,23 @@ main {
   top: 4320px;
 }
 
-.contact-me-overlay {  
+.contact-me-overlay {
   position: absolute;
   margin-left: 153px;
   top: 4370px;
 }
 
-.contact-me {  
+.contact-me {
   width: 200px;
-  height: 56px; 
+  height: 56px;
   color: #fff;
   margin: auto auto;
 }
 
 .contact-me-p {
-   width: 327px;
-  height: 100px;  
-  color: #fff;   
+  width: 327px;
+  height: 100px;
+  color: #fff;
   text-align: center;
   margin-left: 24px;
   padding: 0;
@@ -433,7 +436,7 @@ main {
 
 .about-u {
   width: 375px;
-  height: 675px;  
+  height: 675px;
   top: 4430px;
   position: absolute;
   display: flex;
@@ -441,18 +444,20 @@ main {
   justify-content: space-between;
 }
 
-input[type=text], input[type=email] {
+input[type='text'],
+input[type='email'] {
   width: 327px;
   height: 54px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   margin-bottom: 12px;
   margin-left: 24px;
-  padding-left: 12px;font-size: 17px;
+  padding-left: 12px;
+  font-size: 17px;
   font-weight: 500;
 }
 
-input[type=textarea] {
+input[type='textarea'] {
   width: 327px;
   height: 230px;
   border-radius: 8px;
@@ -461,10 +466,10 @@ input[type=textarea] {
   border: 1px solid #cfd8dc;
   padding-left: 12px;
   font-size: 17px;
-  font-weight: 500;   
+  font-weight: 500;
 }
 
-input[type=submit] {
+input[type='submit'] {
   width: 140px;
   height: 48px;
   border-radius: 8px;
@@ -480,11 +485,10 @@ input[type=submit] {
 
 .form-img {
   height: 5px;
-width: 134px;
-left: 120px;
-top: 21px;
-border-radius: 10px;
-position: absolute;
- top: 680px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+  position: absolute;
+  top: 680px;
 }
-
