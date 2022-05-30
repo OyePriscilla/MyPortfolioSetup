@@ -7,7 +7,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
+  width: 375px;
+  margin: auto auto;
+}
+
+.contain {
+  
 }
 
 /* all link element style */
@@ -309,7 +315,7 @@ main {
   justify-content: space-between;
   margin-top: 24px;
   height: 464.14678955078125px;
-  width: 327px;
+  width: 375px;
   border-radius: 0;
 }
 
@@ -319,7 +325,7 @@ main {
 
 .tech-toolss li {
   height: 66.7155990600586px;
-  width: 303px;
+  width: 327px;
   left: 12px;
   top: 12px;
   border-radius: 8px;
@@ -365,7 +371,7 @@ main {
   align-items: center;
   color: #000;
   height: 66.7155990600586px;
-  width: 303px;
+  width: 327px;
   left: 12px;
   top: 12px;
   border-radius: 8px;
@@ -376,17 +382,104 @@ main {
 }
 
 .btt-arr {
-  margin-left: 100px;
+  margin-left: 124px;
   font-size: 22px;
   background: transparent;
   border: none;
 }
 
 .skill-margin {
-  margin-left: 160px;
+  margin-left: 183px;
 }
 
 /* border-bottom added to element */
 .framework {
   border-bottom: 1px solid #c8c8ca;
 }
+
+.img-background {
+  width: 375px;
+  height: 810px;
+  position: absolute;
+  top: 4320px;
+}
+
+.contact-me-overlay {  
+  position: absolute;
+  margin-left: 153px;
+  top: 4370px;
+}
+
+.contact-me {  
+  width: 200px;
+  height: 56px; 
+  color: #fff;
+  margin: auto auto;
+}
+
+.contact-me-p {
+   width: 327px;
+  height: 100px;  
+  color: #fff;   
+  text-align: center;
+  margin-left: 24px;
+  padding: 0;
+}
+
+.about-u {
+  width: 375px;
+  height: 675px;  
+  top: 4430px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input[type=text], input[type=email] {
+  width: 327px;
+  height: 54px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  padding-left: 12px;font-size: 17px;
+  font-weight: 500;
+}
+
+input[type=textarea] {
+  width: 327px;
+  height: 230px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  border: 1px solid #cfd8dc;
+  padding-left: 12px;
+  font-size: 17px;
+  font-weight: 500;   
+}
+
+input[type=submit] {
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  border: 1px solid #cfd8dc;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: blue;
+}
+
+.form-img {
+  height: 5px;
+width: 134px;
+left: 120px;
+top: 21px;
+border-radius: 10px;
+position: absolute;
+ top: 680px;
+}
+
