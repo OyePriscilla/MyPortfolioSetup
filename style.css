@@ -454,6 +454,9 @@ main {
   background-color: #fff;
   color: #6070ff;
   border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .bottom-img {
