@@ -401,7 +401,6 @@ main {
 }
 
 .contact-img {
- 
 }
 
 .contact-header {
@@ -410,6 +409,8 @@ main {
   font-size: 40px;
   line-height: 52px;
   color: #fff;
+  padding-top: 103px;
+  margin-bottom: 12px;
 }
 
 .contact-para {
@@ -418,4 +419,5 @@ main {
   font-size: 20px;
   line-height: 28px;
   color: #fff;
+  margin-bottom: 80px;
 }
