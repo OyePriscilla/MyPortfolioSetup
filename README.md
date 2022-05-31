@@ -8,7 +8,8 @@ This Project is created purposely to learn how to build Portfolio.
 
 ## Requirements
 * Create a new GitHub Repo and a new branch with GitHub flow
-*  Setup Linter for HTML and CSS
+* Setup Linter for HTML and CSS
+* Add Form validation 
 
 ## Getting Started
 This project was setup using Visual Studio Code Editor. A linter was as well setup for the HTML and CSS files.
