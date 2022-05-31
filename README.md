@@ -28,7 +28,19 @@ How to use a Computer
 ## Deployment
 
 ## Author
-* GitHub: Github: [OyePriscilla](https://github.com/OyePriscilla)
+👤 **Author1**
+👤 **Oyebade Prisicilla**
+
+- GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+- Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+- LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
+
+👤 **Author2**
+ **Abdelmejid Oumer Ali**
+ 
+- GitHub: [@amejid](https://github.com/amejid)
+- Twitter: [@amejidoumer](https://twitter.com/amejidoumer)
+- LinkedIn: [amejid](https://linkedin.com/in/amejid)
 
 ## Contibution
 Contributions, issues, and feature requests are welcome!
