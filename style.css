@@ -390,3 +390,83 @@ main {
 .framework {
   border-bottom: 1px solid #c8c8ca;
 }
+
+.footer-wrap {
+  background-color: hsl(234, 100%, 69%);
+  border-top-left-radius: 84px;
+  background-image: url(resources/img/contact-form-shapes-mobile.png);
+  background-position: right 21px;
+  background-repeat: no-repeat;
+  height: 779px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail {
+  margin: 0 24px;
+  margin-bottom: 54px;
+}
+
+.contact-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  padding-top: 103px;
+  margin-bottom: 12px;
+}
+
+.contact-para {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.contact-form {
+  margin: 0 24px;
+}
+
+.block-disp {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.texttypo {
+  height: 170px;
+}
+
+.btn-submit {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  background-color: #fff;
+  color: #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.btn-submit:hover {
+  background-color: #7f8cff;
+}
+
+.bottom-img {
+  height: 5px;
+  width: 134px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 24px;
+}

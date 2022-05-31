@@ -6,16 +6,20 @@ This Project is created purposely to learn how to build Portfolio.
 * HTML
 * CSS
 
-## Requirements
-* Create a new GitHub Repo and a new branch with GitHub flow
-*  Setup Linter for HTML and CSS
-
 ## Getting Started
-This project was setup using Visual Studio Code Editor. A linter was as well setup for the HTML and CSS files.
-Irrelevant files were specified in .gitignore file including the test file.
 
-## Prerequisite
-How to use a Computer
+Prerequisites
+* Text editor
+* GitHub
+* Git -Browser
+
+Clone this repository on to your local PC
+
+* Click on the Code green button
+* By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
+* In your local PC, open your terminal in the folder you would like to clone the repository into
+* Clone the repository with the command: git clone (copied link); like so: https://github.com/OyePriscilla/MyPortfolioSetup
+* After the clone, type in the command cd MyPortfolioSetup to access the directory on the terminal
 
 ## Setup
 
@@ -28,7 +32,19 @@ How to use a Computer
 ## Deployment
 
 ## Author
-* GitHub: Github: [OyePriscilla](https://github.com/OyePriscilla)
+👤 **Author1**
+👤 **Oyebade Prisicilla**
+
+- GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+- Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+- LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
+
+👤 **Author2**
+ **Abdelmejid Oumer Ali**
+ 
+- GitHub: [@amejid](https://github.com/amejid)
+- Twitter: [@amejidoumer](https://twitter.com/amejidoumer)
+- LinkedIn: [amejid](https://linkedin.com/in/amejid)
 
 ## Contibution
 Contributions, issues, and feature requests are welcome!
