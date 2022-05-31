@@ -391,6 +391,19 @@ main {
   border-bottom: 1px solid #c8c8ca;
 }
 
+.footer-wrap {
+  background-color: hsl(234, 100%, 69%);
+  border-top-left-radius: 84px;
+  background-image: url(resources/img/contact-form-shapes-mobile.png);
+  background-position: right 21px;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.contact-img {
+ 
+}
+
 .contact-header {
   text-align: center;
   font-weight: 700;
