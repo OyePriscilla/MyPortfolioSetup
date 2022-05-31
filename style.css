@@ -459,6 +459,10 @@ main {
   line-height: 20px;
 }
 
+.btn-submit:hover {
+  background-color: #7f8cff;
+}
+
 .bottom-img {
   height: 5px;
   width: 134px;
