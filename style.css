@@ -455,3 +455,11 @@ main {
   color: #6070ff;
   border-radius: 8px;
 }
+
+.bottom-img {
+  height: 5px;
+  width: 134px;
+  border-radius: 10px;
+  margin: 0 auto;  
+  margin-top: 24px;
+}
