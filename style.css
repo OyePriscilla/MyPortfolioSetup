@@ -397,7 +397,7 @@ main {
   background-image: url(resources/img/contact-form-shapes-mobile.png);
   background-position: right 21px;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 779px;
 }
 
 .contact-img {
@@ -420,4 +420,24 @@ main {
   line-height: 28px;
   color: #fff;
   margin-bottom: 80px;
+}
+
+.contact-form {
+  margin: 0 24px;
+}
+
+.block-disp {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 15px 38px 15px 16px; 
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.texttypo {  
+  height: 170px;
 }
