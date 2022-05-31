@@ -390,3 +390,19 @@ main {
 .framework {
   border-bottom: 1px solid #c8c8ca;
 }
+
+.contact-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-para {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
