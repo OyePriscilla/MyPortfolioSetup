@@ -398,6 +398,13 @@ main {
   background-position: right 21px;
   background-repeat: no-repeat;
   height: 779px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail {
+  margin: 0 24px;
+  margin-bottom: 54px;
 }
 
 .contact-header {
@@ -415,8 +422,7 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #fff;
-  margin-bottom: 80px;
+  color: #fff; 
 }
 
 .contact-form {
