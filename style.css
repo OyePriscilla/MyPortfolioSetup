@@ -470,3 +470,26 @@ main {
   margin: 0 auto;
   margin-top: 24px;
 }
+
+@media screen and (min-width: 786px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .general-container {
+    height: 5125px;
+    width: 1440px;
+    background: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
