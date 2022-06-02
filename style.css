@@ -187,6 +187,13 @@ main {
   flex-grow: 0;
 }
 
+.snapshoot {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px;
+  gap: 24px; */
+}
+
 .snapshoot-desktop {
   display: none;
 }
@@ -409,6 +416,8 @@ main {
   height: 779px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-detail {
@@ -777,11 +786,34 @@ main {
     margin-top: 30px;
   }
 
+  a:hover {
+    background-color: grey;
+    cursor: pointer;
+  }  
+
+  .btn-submit:hover, btthover {
+    background-color: #7f8cff;
+  }
+
+  .snapshoot {
+    display: none;
+  }
+
+  .snapshoot-desktop img {
+    max-width: 100%;    
+  }
+
   .contact-detail {
+    max-width: 569px; 
     
   }
 
-  
+  footer {
+   
+    width: 100%;
+   
+    
+  }
 
 }
 
