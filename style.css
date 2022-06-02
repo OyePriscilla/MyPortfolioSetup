@@ -132,7 +132,7 @@ a:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-weight: 900;  
+  font-weight: 900;
 }
 
 /* social media icon size */
@@ -187,15 +187,14 @@ main {
 
 /* second section image properties */
 .snapshoot img {
-   border-radius: 8px;
-  }
+  border-radius: 8px;
+}
 
 .snapshoot {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  
 }
 
 .snapshoot-desktop {
@@ -263,7 +262,7 @@ main {
 
 .tech-tools button {
   padding: 4px 12px;
-  
+
   height: 24px;
   color: #6070ff;
   border: none;
@@ -523,7 +522,7 @@ main {
     display: flex;
     flex-direction: column;
   }
-  
+
   .central-wrapper {
     width: 100%;
     background-color: #fff;
@@ -534,7 +533,7 @@ main {
     width: 80vw;
     height: 84px;
   }
-  
+
   .desktop-nav {
     display: flex;
     align-items: center;
@@ -577,7 +576,7 @@ main {
   .main-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    
+    align-items: flex-start;
     gap: 12px;
     position: absolute;
     width: 1375px;
@@ -625,7 +624,7 @@ main {
   .social-connect {
     margin-bottom: 20px;
   }
-  
+
   main {
     display: flex;
     flex-direction: column;
@@ -633,7 +632,7 @@ main {
     height: 2694px;
     gap: 10px;
   }
-  
+
   .works {
     display: flex;
     flex-direction: row;
@@ -766,7 +765,7 @@ main {
   btthover {
     background-color: #7f8cff;
   }
-  
+
   .snapshoot {
     display: none;
   }
@@ -778,7 +777,7 @@ main {
   .contact-detail {
     max-width: 569px;
   }
-  
+
   footer {
     width: 100%;
   }
@@ -790,5 +789,4 @@ main {
   .connect {
     margin-top: 4px;
   }
-
 }
