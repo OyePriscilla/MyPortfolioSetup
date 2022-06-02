@@ -254,11 +254,11 @@ main {
 }
 
 .tech-tools {
-  display: grid;
-  grid-template-columns: 53px 45px 89px;
-  column-gap: 15px;
   font-weight: 900;
   list-style: none;
+  display: grid;
+  grid-template-columns: 53px 110px 43px 86px;
+  column-gap: 10px;
 }
 
 .tech-tools button {
@@ -502,10 +502,6 @@ main {
   margin-top: 24px;
 }
 
-.snapshoot-desktop {
-  display: none;
-}
-
 @media screen and (min-width: 786px) {
   * {
     margin: 0;
@@ -522,18 +518,14 @@ main {
   }
 
   .general-container {
-    height: 100%;    
+    height: 100%;
     background: #f4f5f7;
     display: flex;
     flex-direction: column;
   }
-
-  header {
-  }
-
+  
   .central-wrapper {
     width: 100%;
-    /* height: 916px; */
     background-color: #fff;
     border-bottom-left-radius: 114px;
   }
@@ -542,10 +534,7 @@ main {
     width: 80vw;
     height: 84px;
   }
-
-  .header-class a {
-  }
-
+  
   .desktop-nav {
     display: flex;
     align-items: center;
@@ -556,7 +545,7 @@ main {
     right: 20px;
   }
 
-   .desktop-nav li {
+  .desktop-nav li {
     margin-right: 2em;
   }
 
@@ -582,14 +571,13 @@ main {
 
   .logo-text {
     color: #6070ff;
-    width: 20pvw;
+    width: 20vw;
   }
 
   .main-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    /* padding: 0 24px; */
+    align-items: flex-start;    
     gap: 12px;
     position: absolute;
     width: 1375px;
@@ -606,7 +594,7 @@ main {
     background-origin: content-box;
   }
 
-  .main-content-desktop {   
+  .main-content-desktop {
     position: absolute;
     top: 180px;
     left: 230px;
@@ -626,7 +614,6 @@ main {
   .self-intro {
     width: 50vw;
     height: 148px;
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -637,17 +624,16 @@ main {
 
   .social-connect {
     margin-bottom: 20px;
-  }  
-
+  }
+  
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 2694px;
     gap: 10px;
-    
   }
-
+  
   .works {
     display: flex;
     flex-direction: row;
@@ -780,7 +766,7 @@ main {
   btthover {
     background-color: #7f8cff;
   }
-
+  
   .snapshoot {
     display: none;
   }
@@ -804,5 +790,5 @@ main {
   .connect {
     margin-top: 4px;
   }
-  
+
 }
