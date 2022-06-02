@@ -556,6 +556,8 @@ main {
   
   .desktop-nav li a:hover {
     background-color: #091e42;
+    
+    /* color:#091e42 */
   }
 
   .header-typo {
