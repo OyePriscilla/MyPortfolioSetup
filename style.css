@@ -207,7 +207,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 260px;
+  height: 300px;
+  margin-top: 24px;
 }
 
 /* flex display, ul li used to list the items */
