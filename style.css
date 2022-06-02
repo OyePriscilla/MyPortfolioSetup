@@ -553,10 +553,10 @@ main {
     background-color: grey;
     cursor: pointer;
   }
-  
+
   .desktop-nav li a:hover {
     background-color: #091e42;
-    
+
     /* color:#091e42 */
   }
 
@@ -725,7 +725,7 @@ main {
     justify-content: flex-start;
     background-color: #fff;
   }
-  
+
   .listimg {
     display: flex;
     flex-direction: column;
@@ -752,7 +752,7 @@ main {
   .getresume {
     margin-top: 30px;
   }
-  
+
   .btn-submit:hover {
     background-color: #7f8cff;
   }
