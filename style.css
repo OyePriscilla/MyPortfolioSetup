@@ -731,6 +731,8 @@ main {
 
   .skill-list {
     height: 334px;
+
+    /* width: 224px; */
   }
 
   .btt-arr {
