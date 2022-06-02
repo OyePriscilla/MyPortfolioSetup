@@ -21,7 +21,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 5410px;
-  /* width: 375px; */
   left: 11282px;
   top: -1883px;
   border-radius: 0;
@@ -33,7 +32,6 @@ a:hover {
 .central-wrapper {
   display: flex;
   height: 812px;
-  /* width: 375px; */
   left: 12395px;
   border-radius: 0;
   flex-direction: column;
@@ -252,21 +250,12 @@ main {
   margin-bottom: 56px;
 }
 
-.tech-tools {
-  font-weight: 900;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 53px 110px 43px 86px;
-  column-gap: 10px;
-}
-
 .tech-tools button {
   padding: 4px 12px;
-
   height: 24px;
   color: #6070ff;
   border: none;
-  background: #ebebbf;
+  background: #ebebff;
   border-radius: 8px;
 }
 
@@ -339,6 +328,8 @@ main {
   display: grid;
   grid-template-columns: 53px 110px 43px 86px;
   column-gap: 10px;
+  font-weight: 900;
+  list-style: none;
 }
 
 .tech-toolss {
@@ -544,6 +535,12 @@ main {
     right: 20px;
   }
 
+  .tech-toolss li {
+    width: 72px;
+    background-color: #f7f7f9;
+    margin-left: 5px;
+  }
+
   .desktop-nav li {
     margin-right: 2em;
   }
@@ -552,6 +549,11 @@ main {
     margin-right: 0;
   }
 
+  a:hover {
+    background-color: grey;
+    cursor: pointer;
+  }
+  
   .desktop-nav li a:hover {
     background-color: #091e42;
   }
@@ -580,7 +582,6 @@ main {
     gap: 12px;
     position: absolute;
     width: 1375px;
-    height: 604px;
     top: 24px;
     background-image: none;
     background-image: url(resources/img/Header-bg.png);
@@ -588,8 +589,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 769px;
-    display: flex;
-    flex-direction: column;
     background-origin: content-box;
   }
 
@@ -724,13 +723,7 @@ main {
     justify-content: flex-start;
     background-color: #fff;
   }
-
-  .tech-toolss li {
-    width: 72px;
-    background-color: #f7f7f9;
-    margin-left: 5px;
-  }
-
+  
   .listimg {
     display: flex;
     flex-direction: column;
@@ -755,14 +748,8 @@ main {
   .getresume {
     margin-top: 30px;
   }
-
-  a:hover {
-    background-color: grey;
-    cursor: pointer;
-  }
-
-  .btn-submit:hover,
-  btthover {
+  
+  .btn-submit:hover {
     background-color: #7f8cff;
   }
 
