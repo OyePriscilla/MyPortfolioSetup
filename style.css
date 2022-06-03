@@ -546,7 +546,7 @@ main {
     width: 80vw;
     height: 84px;
     position: fixed;
-    padding-left: 142px;   
+    padding-left: 142px;
   }
 
   .desktop-nav {
@@ -820,39 +820,17 @@ main {
     width: 604px;
   }
 
-  .media4 {
-    order: 0;
-  }
-
-  .media2 {
-    flex: 1;
-    order: 1;
-  }
-
-  .media5 {
-    order: 2;
-  }
-
-  .media11 {
-    order: 3;
-  }
-
-  .media3 {
-    order: 4;
-  }
-
   input[type="email"]::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   input[type="text"]::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
-    color: #172B4D;
+    color: #172b4d;
   }
-
 }
