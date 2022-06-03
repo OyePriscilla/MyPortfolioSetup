@@ -244,9 +244,13 @@ main {
   font-weight: 900;
   font-size: 40px;
   line-height: 44px;
-  color: #172b4d;
+  color: #091e42;
   flex: none;
   margin-bottom: 56px;
+}
+
+.tonic2 {
+  color: #091e42;
 }
 
 .btn-touch {
