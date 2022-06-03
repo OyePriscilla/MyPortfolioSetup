@@ -166,7 +166,6 @@ main {
   height: 2450px;
 }
 
-/* individual section display property is flex */
 .works {
   display: flex;
   flex-direction: column;
@@ -251,7 +250,7 @@ main {
 }
 
 .btn-touch {
-  background: none;  
+  background: none;
   padding: 12px 16px;
   width: 140px;
   height: 48px;
