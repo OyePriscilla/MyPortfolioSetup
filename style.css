@@ -497,6 +497,10 @@ main {
   line-height: 20px;
 }
 
+.block-disp:focus {
+  background-color: #c8c8ca;
+}
+
 .texttypo {
   height: 170px;
 }
@@ -788,6 +792,10 @@ main {
 
   .snapshoot-desktop img {
     max-width: 100%;
+  }
+
+  .snapshoot-desktop img:hover {
+    transform: scale(1.1);
   }
 
   .contact-detail {
