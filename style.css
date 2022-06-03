@@ -130,7 +130,7 @@ a:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 /* social media icon size */
@@ -239,7 +239,7 @@ main {
 }
 
 .tonic {
-  width: 295px;
+  width: 496px;
   height: 36px;
   font-style: normal;
   font-weight: 900;
@@ -414,7 +414,7 @@ main {
   border-radius: 8px;
   margin-bottom: 12px;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 500;
   background: transparent;
 }
 
@@ -566,7 +566,7 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     background-color: #f7f7f9;
-    margin-right: 12px;    
+    margin-right: 12px;
   }
 
   .tech-toolss img {
@@ -770,11 +770,15 @@ main {
   }
 
   .btt-arr {
-    margin-left: 208px;
+    margin-left: 408px;
   }
 
   .skill-margin {
-    margin-left: 72px;
+    margin-left: 62px;
+  }
+
+  .skill-lang {
+    margin-left: 392px;
   }
 
   .lang-img {
@@ -811,5 +815,9 @@ main {
 
   .connect {
     margin-top: 4px;
+  }
+
+  .framework {
+    width: 604px;
   }
 }
