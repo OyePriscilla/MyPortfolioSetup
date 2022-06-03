@@ -834,4 +834,14 @@ main {
     line-height: 20px;
     color: #172b4d;
   }
+
+  .list-style {
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .list-style2 {
+    font-weight: 400;
+    color: #6b778c;
+  }
 }
