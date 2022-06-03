@@ -263,14 +263,14 @@ main {
   line-height: 20px;
 }
 
-.btn-touch:hover {
+/* .btn-touch:hover {
   background-color: #172b4d;
-}
+} */
 
-.btn-touch-blue {
+/* .btn-touch-blue {
   background-color: #396df2;
   color: #fff;
-}
+} */
 
 .tech-tools button {
   padding: 4px 12px;
@@ -789,9 +789,9 @@ main {
     margin-top: 30px;
   }
 
-  .btn-submit:hover {
+  /* .btn-submit:hover {
     background-color: #7f8cff;
-  }
+  } */
 
   .snapshoot {
     display: none;
@@ -843,5 +843,24 @@ main {
   .list-style2 {
     font-weight: 400;
     color: #6b778c;
+  }
+
+  .btn-touch:enabled {
+    background: #fff;
+    color: #3b4eff;
+  }
+
+  .btn-touch:hover {
+    color: #fff;
+    background: #3b4eff;
+  }
+
+  .btn-touch:active {
+    background: #2230d2;
+    color: #fff;
+  }
+
+  .btn-touch:disabled {
+    color: #5e6c84;
   }
 }
