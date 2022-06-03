@@ -8,7 +8,7 @@
 
 body {
   width: 375px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* all link element style */
@@ -65,7 +65,7 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .desktop-nav {
@@ -497,6 +497,10 @@ main {
   line-height: 20px;
 }
 
+.block-disp:focus {
+  background-color: #c8c8ca;
+}
+
 .texttypo {
   height: 170px;
 }
@@ -518,7 +522,7 @@ main {
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     overflow-x: hidden;
     width: 100%;
@@ -541,6 +545,23 @@ main {
     height: 84px;
     position: fixed;
     padding-left: 142px;
+  }
+
+  .name-header {
+    animation-duration: 3s;
+    animation-name: flyin;
+  }
+
+  @keyframes flyin {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .desktop-nav {
@@ -790,6 +811,10 @@ main {
     max-width: 100%;
   }
 
+  .snapshoot-desktop img:hover {
+    transform: scale(1.1);
+  }
+
   .contact-detail {
     max-width: 569px;
   }
@@ -810,14 +835,14 @@ main {
     width: 604px;
   }
 
-  input[type="email"]::-webkit-input-placeholder {
+  input[type='email']::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
     color: #172b4d;
   }
 
-  input[type="text"]::-webkit-input-placeholder {
+  input[type='text']::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
