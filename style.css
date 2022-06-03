@@ -694,7 +694,7 @@ main {
   .workss {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 634px;
@@ -710,9 +710,8 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 94px;
-    position: absolute;
-    left: 142px;
-    width: 80vw;
+    max-width: 100%;
+    margin-left: 68px;
   }
 
   .name2 {
