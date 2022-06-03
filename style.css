@@ -560,9 +560,17 @@ main {
   }
 
   .tech-toolss li {
-    width: 72px;
+    width: 122px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
     background-color: #f7f7f9;
-    margin-left: 5px;
+    margin-right: 12px;    
+  }
+
+  .tech-toolss img {
+    margin-left: 12px;
   }
 
   .desktop-nav li {
