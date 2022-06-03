@@ -545,6 +545,8 @@ main {
   .header-class {
     width: 80vw;
     height: 84px;
+    position: fixed;
+    padding-left: 142px;   
   }
 
   .desktop-nav {
@@ -816,5 +818,26 @@ main {
 
   .framework {
     width: 604px;
+  }
+
+  .media4 {
+    order: 0;
+  }
+
+  .media2 {
+    flex: 1;
+    order: 1;
+  }
+
+  .media5 {
+    order: 2;
+  }
+
+  .media11 {
+    order: 3;
+  }
+
+  .media3 {
+    order: 4;
   }
 }
