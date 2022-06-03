@@ -840,4 +840,19 @@ main {
   .media3 {
     order: 4;
   }
+
+  input[type="email"]::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172B4D;
+  }
+
+  input[type="text"]::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172B4D;
+  }
+
 }
