@@ -249,10 +249,6 @@ main {
   margin-bottom: 56px;
 }
 
-.tonic2 {
-  color: #091e42;
-}
-
 .btn-touch {
   background: none;
   padding: 12px 16px;
@@ -289,6 +285,7 @@ main {
   font-size: 34px;
   width: 295px;
   height: 80px;
+  color: #091e42;
 }
 
 .workss {
