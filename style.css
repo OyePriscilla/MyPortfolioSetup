@@ -251,8 +251,7 @@ main {
 }
 
 .btn-touch {
-  background: none;
-  border: none;
+  background: none;  
   padding: 12px 16px;
   width: 140px;
   height: 48px;
