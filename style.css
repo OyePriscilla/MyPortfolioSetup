@@ -865,6 +865,7 @@ main {
     font-size: 40px;
   }
 
+  
   .tech-tools {
     display: grid;
     grid-template-columns: 53px 110px 43px 86px;
