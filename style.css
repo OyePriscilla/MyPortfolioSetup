@@ -864,4 +864,12 @@ main {
   .tonic {
     font-size: 40px;
   }
+  
+  .tech-tools {
+    display: grid;
+    grid-template-columns: 53px 110px 43px 86px;
+    column-gap: 10px;
+    font-weight: 900;
+    list-style: none;
+  }
 }
