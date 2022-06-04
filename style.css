@@ -41,7 +41,7 @@ a:hover {
 /* header */
 .header-class {
   height: 48px;
-  width: 100%;
+  width: 375px;
   left: 0;
   top: 0;
   border-radius: 0;
@@ -263,6 +263,8 @@ main {
   font-weight: 400;
   line-height: 20px;
   cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 20px;
 }
 
 .btn-touch:enabled {
@@ -361,7 +363,7 @@ main {
 
 .tech-tools {
   display: grid;
-  grid-template-columns: 53px 110px 43px 86px;
+  grid-template-columns: 53px 43px 86px;
   column-gap: 10px;
   font-weight: 900;
   list-style: none;
@@ -540,7 +542,8 @@ main {
   .header-class {
     height: 84px;
     position: fixed;
-    padding-left: 142px;
+    padding: 0 142px;
+    width: 100%;
   }
 
   .desktop-nav {
