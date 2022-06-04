@@ -8,7 +8,7 @@
 
 body {
   width: 375px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* all link element style */
@@ -65,7 +65,7 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .desktop-nav {
@@ -523,7 +523,7 @@ main {
   }
 
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     overflow-x: hidden;
     width: 100%;
@@ -837,14 +837,14 @@ main {
     width: 604px;
   }
 
-  input[type='email']::-webkit-input-placeholder {
+  input[type="email"]::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
     color: #172b4d;
   }
 
-  input[type='text']::-webkit-input-placeholder {
+  input[type="text"]::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -863,5 +863,13 @@ main {
 
   .tonic {
     font-size: 40px;
+  }
+
+  .tech-tools {
+    display: grid;
+    grid-template-columns: 53px 110px 43px 86px;
+    column-gap: 10px;
+    font-weight: 900;
+    list-style: none;
   }
 }
