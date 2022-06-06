@@ -30,6 +30,7 @@ Clone this repository on to your local PC
 ## Run tests
 
 ## Deployment
+Access the online version of this project through this link [PriscillaPortfolio](https://oyepriscilla.github.io/MyPortfolioSetup)
 
 ## Author
 👤 **Author1**
