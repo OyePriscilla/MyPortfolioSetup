@@ -101,8 +101,12 @@ a:hover {
   font-weight: 400;
   font-size: 22px;
   line-height: 24px;
-  margin-bottom: 115px;
+  margin-bottom: 88px;
   color: #344563;
+}
+
+.self {
+  margin-bottom: 72px;
 }
 
 /* Media icons */
@@ -115,7 +119,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-top: 44px;
+  margin-top: 12px;
 }
 
 /* Let's connect style */
@@ -177,10 +181,7 @@ main {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  border-radius: 16px; 
 }
 
 /* second section image properties */
@@ -223,15 +224,11 @@ main {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 24px;
-  font-weight: 900;
+  font-weight: 900; 
 }
 
 .project-title a {
   color: #344563;
-}
-
-.block-content p {
-  margin-top: 24px;
 }
 
 .list-style {
@@ -246,8 +243,7 @@ main {
   font-size: 30px;
   line-height: 44px;
   color: #091e42;
-  flex: none;
-  margin-bottom: 56px;
+  flex: none;  
 }
 
 .btn-touch {
@@ -549,8 +545,8 @@ main {
     width: 100%;
   }
 
-  .name-header {
-    animation-duration: 3s;
+  .self-intro {
+    animation-duration: 0.15s;
     animation-name: flyin;
   }
 
