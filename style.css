@@ -12,20 +12,17 @@ body {
 }
 
 /* all link element style */
-a:hover {
+/* a:hover {
   background-color: grey;
   cursor: pointer;
-}
+} */
 
 .general-container {
   display: flex;
   flex-direction: column;
-  height: 5410px;
-  left: 11282px;
-  top: -1883px;
-  border-radius: 0;
   justify-content: flex-start;
   align-items: center;
+  overflow-x: hidden;
 }
 
 /* Central wrapper that holds all content styling */
@@ -66,6 +63,29 @@ a:hover {
   align-items: center;
   text-align: center;
   font-family: "Poppins", sans-serif;
+}
+
+.mobile-nav {
+  display: flex;
+  height: 881px;
+  width: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+  background-color: #6070ff;
+  list-style: none;
+}
+
+.mobile-nav li {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.mobile-nav a {
+  color: #fff;
 }
 
 .desktop-nav {
@@ -181,7 +201,7 @@ main {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 /* second section image properties */
@@ -224,7 +244,7 @@ main {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 24px;
-  font-weight: 900; 
+  font-weight: 900;
 }
 
 .project-title a {
@@ -243,7 +263,7 @@ main {
   font-size: 30px;
   line-height: 44px;
   color: #091e42;
-  flex: none;  
+  flex: none;
 }
 
 .btn-touch {
@@ -617,6 +637,10 @@ main {
     display: none;
   }
 
+  .mobile-nav {
+    visibility: hidden;
+  }
+
   .logo-text {
     color: #6070ff;
     width: 20vw;
@@ -861,7 +885,6 @@ main {
     font-size: 40px;
   }
 
-  
   .tech-tools {
     display: grid;
     grid-template-columns: 53px 110px 43px 86px;
