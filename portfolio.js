@@ -16,6 +16,8 @@ menuClose.addEventListener('click', ()=>{
     mobileMenu.style.display = 'none'
     menuClose.style.display = 'none'
     menuIcon.style.display = 'flex'
+    headerContent.style.filter = 'blur(0)'
+    logo.style.filter = 'blur(0)'
 })
 
 // function toggleMenuItem(menu){
