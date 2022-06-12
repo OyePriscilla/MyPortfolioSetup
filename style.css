@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -11,21 +10,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* all link element style */
-a:hover {
-  background-color: grey;
-  cursor: pointer;
-}
-
 .general-container {
   display: flex;
   flex-direction: column;
-  height: 5410px;
-  left: 11282px;
-  top: -1883px;
-  border-radius: 0;
   justify-content: flex-start;
   align-items: center;
+  overflow-x: hidden;
 }
 
 /* Central wrapper that holds all content styling */
@@ -68,6 +58,63 @@ a:hover {
   font-family: "Poppins", sans-serif;
 }
 
+.hamburger {
+  display: flex;
+  margin: auto 0;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.fa-bars {
+  color: #6070ff;
+  cursor: pointer;
+}
+
+.fa-times {
+  color: #fff;
+  display: none;
+  z-index: 4;
+}
+
+.mobile-nav {
+  display: none;
+  width: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+  background-color: #4353e5;
+  list-style: none;
+  height: 812px;
+  z-index: 3;
+  opacity: 75%;
+}
+
+.mobile-nav li {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 44px;
+  /* or 138% */
+
+  display: flex;
+  align-items: center;
+
+  /* Theme 1 / Neutrals 11 */
+
+  color: #ffffff;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -82,9 +129,10 @@ a:hover {
   position: absolute;
   width: 375px;
   height: 604px;
-  top: 24px;
+  top: 74px;
   background-image: url(resources/img/header-shapes\ mobile.png);
-  padding-top: 92px;
+  padding: 45px;
+  /* filter: blur(5px); */
 }
 
 /* Name h2 style */
@@ -181,7 +229,7 @@ main {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 /* second section image properties */
@@ -224,7 +272,7 @@ main {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 24px;
-  font-weight: 900; 
+  font-weight: 900;
 }
 
 .project-title a {
@@ -243,7 +291,7 @@ main {
   font-size: 30px;
   line-height: 44px;
   color: #091e42;
-  flex: none;  
+  flex: none;
 }
 
 .btn-touch {
@@ -594,13 +642,11 @@ main {
     margin-right: 0;
   }
 
-  a:hover {
-    background-color: grey;
-    cursor: pointer;
-  }
-
-  .desktop-nav li a:hover {
-    background-color: #091e42;
+  .desktop-nav-li:hover {
+    /* background-color: #091e42;
+    cursor: pointer; */
+    transform: scale(8);
+    transition: 15s;
 
     /* color:#091e42 */
   }
@@ -611,9 +657,19 @@ main {
     line-height: 20px;
     text-align: center;
     color: #344563;
+    cursor: pointer;
+  }
+
+  .header-typo:hover {
+    transform: scale(1.2);
+    transition: 5s;
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 
@@ -629,7 +685,7 @@ main {
     gap: 12px;
     position: absolute;
     width: 1375px;
-    top: 24px;
+    top: 74px;
     background-image: none;
     background-image: url(resources/img/Header-bg.png);
     background-position: center center;
@@ -852,6 +908,11 @@ main {
     color: #344563;
   }
 
+  .list-style:hover {
+    transform: scale(1.8);
+    transition: 4s;
+  }
+
   .list-style2 {
     font-weight: 400;
     color: #6b778c;
@@ -861,7 +922,6 @@ main {
     font-size: 40px;
   }
 
-  
   .tech-tools {
     display: grid;
     grid-template-columns: 53px 110px 43px 86px;

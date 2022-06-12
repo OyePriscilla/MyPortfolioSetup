@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <title>Priscilla Portfolio</title>
   </head>
 
@@ -17,20 +19,22 @@
     <div class="general-container">
       <div class="central-wrapper">       
         <header class="header-class">
-          <div class="logo-text">
-            <a class="logo-text ">My Logo</a>
-          </div>
-          <div>
+          <div class="logo-text"><a class="logo-text ">My Logo</a> </div>  
             <nav>
-             <ul class="desktop-nav">
-               <li><a class="header-typo" href="#">Portfolio</a></li>
-               <li><a class="header-typo" href="#">About</a></li>
-               <li><a class="header-typo" href="#">contact</a></li>
+             <ul class="desktop-nav">             
+               <li class="header-typo"><a  href="#portfolio">Portfolio</a></li>
+               <li class="header-typo"><a  href="#about">About</a></li>
+               <li class="header-typo"><a  href="#contact">contact</a></li>
              </ul>
             </nav>
-          </div>
-          <nav class="hamburger">
-            <a href="#"><img src="resources/img/Union.png" alt="menu-icon" /></a>
+          <nav class="hamburger" >
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+            <ul class="mobile-nav">
+              <li class="header-typo"><a  href="#portfolio">Portfolio</a></li>
+               <li class="header-typo"><a  href="#about">About</a></li>
+               <li class="header-typo"><a  href="#contact">contact</a></li>
+            </ul>
           </nav>
         </header>
         <section class="main-wrapper">          
@@ -64,7 +68,7 @@
         </div>          
         </section>
       </div>
-      <main>
+      <main id="portfolio" name ="portfolio">
         <section class="works">
           <div class="snapshoot">
             <img src="resources/img/SnapshootPortfolio.png" alt="snapshoot" />
@@ -245,7 +249,7 @@
           
         </section>
       </main> 
-      <section class="workss">
+      <section class="workss" id="about" name="about">
         <div class="workss-wrapper">
           <div class="about-me">
             <h1 class="name name2">About Me!</h1>
@@ -317,7 +321,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer id="contact" name="contact">
         <div class="footer-wrap">
           <div class="contact-detail">
             <h2 class="contact-header">Contact me</h2>
@@ -359,5 +363,6 @@
         </div>
       </footer>
     </div>
+    <script src="./portfolio.js"></script>
   </body>
 </html>
