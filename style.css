@@ -51,7 +51,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  z-index: 4;
+  z-index: 4000;
 }
 
 /* My Logo style */
@@ -511,6 +511,44 @@ main {
   margin-top: 24px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #6070ff;
+  z-index: 5000;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+}
+
+.overlay img {
+  position: absolute;
+  top: 61px;
+  right: 37px;
+  width: 14px;
+  height: 14px;
+}
+
+.overlay a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.overlay ul{
+  margin-top: 80px;
+  margin-left: 12px;
+}
+
+.overlay li {
+  list-style: none;
+  margin: 15px 0;
+}
+
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -865,4 +903,10 @@ main {
     font-weight: 900;
     list-style: none;
   }
+
+  .overlay {
+    display: none;
+  }
 }
+
+
