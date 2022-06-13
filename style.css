@@ -78,11 +78,11 @@ a:hover {
   align-items: flex-start;
   left: 0;
   top: 0;
-  position: absolute; 
-} 
+  position: absolute;
+}
 
 .mobile-nav li {
-  margin-left: 28px; 
+  margin-left: 28px;
   list-style: none;
   margin-bottom: 15px;
 }
@@ -91,14 +91,14 @@ a:hover {
   margin-top: 106px;
 }
 
-.mobile-nav a{
+.mobile-nav a {
   height: 24px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-color: #FFFFFF;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
 /* My Logo style */
@@ -660,7 +660,7 @@ main {
   .hamburger {
     display: none;
   }
-  
+
   .logo-text {
     color: #6070ff;
     width: 20vw;
