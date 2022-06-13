@@ -13,19 +13,19 @@ body {
 
 /* all link element style */
 a:hover {
-  background-color: grey;
   cursor: pointer;
 }
 
 .general-container {
   display: flex;
   flex-direction: column;
-  height: 5410px;
+  /* height: 5410px; */
   left: 11282px;
   top: -1883px;
   border-radius: 0;
   justify-content: flex-start;
   align-items: center;
+  overflow-x: hidden;
 }
 
 /* Central wrapper that holds all content styling */
@@ -51,6 +51,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   background: #fff;
+  z-index: 4;
 }
 
 /* My Logo style */
@@ -181,7 +182,7 @@ main {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 /* second section image properties */
@@ -224,7 +225,7 @@ main {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 24px;
-  font-weight: 900; 
+  font-weight: 900;
 }
 
 .project-title a {
@@ -243,7 +244,7 @@ main {
   font-size: 30px;
   line-height: 44px;
   color: #091e42;
-  flex: none;  
+  flex: none;
 }
 
 .btn-touch {
@@ -543,6 +544,7 @@ main {
     position: fixed;
     padding: 0 142px;
     width: 100%;
+    z-index: 4;
   }
 
   .self-intro {
@@ -595,14 +597,9 @@ main {
   }
 
   a:hover {
-    background-color: grey;
+    transform: scale(1.1);
+    transition: 1.5s;
     cursor: pointer;
-  }
-
-  .desktop-nav li a:hover {
-    background-color: #091e42;
-
-    /* color:#091e42 */
   }
 
   .header-typo {
@@ -861,7 +858,6 @@ main {
     font-size: 40px;
   }
 
-  
   .tech-tools {
     display: grid;
     grid-template-columns: 53px 110px 43px 86px;
