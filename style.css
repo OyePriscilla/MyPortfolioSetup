@@ -19,7 +19,6 @@ a:hover {
 .general-container {
   display: flex;
   flex-direction: column;
-  /* height: 5410px; */
   left: 11282px;
   top: -1883px;
   border-radius: 0;
@@ -51,7 +50,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  z-index: 4;
+  z-index: 4000;
 }
 
 /* My Logo style */
@@ -66,7 +65,6 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .desktop-nav {
@@ -310,18 +308,6 @@ main {
   background-image: url(resources/img/Baseaboutmyself.png);
 }
 
-/* .workss-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 375px;
-  height: 1200px;
-  background-image: url(resources/img/Baseaboutmyself.png);
-  position: absolute;
-  top: 3280px;
-  left: 0;
-} */
-
 .about-me {
   height: 409px;
   width: 327px;
@@ -397,7 +383,7 @@ main {
 }
 
 .lang span {
-  position: abolute;
+  position: absolute;
   right: 120px;
 }
 
@@ -511,6 +497,45 @@ main {
   margin-top: 24px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #6070ff;
+  z-index: 5000;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.overlay img {
+  position: absolute;
+  top: 61px;
+  right: 37px;
+  width: 14px;
+  height: 14px;
+}
+
+.overlay a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.overlay ul {
+  margin-top: 80px;
+  margin-left: 12px;
+}
+
+.overlay li {
+  list-style: none;
+  margin: 15px 0;
+}
+
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -550,6 +575,14 @@ main {
   .self-intro {
     animation-duration: 0.15s;
     animation-name: flyin;
+    width: 50vw;
+    height: 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #344563;
+    margin-bottom: 10px;
   }
 
   @keyframes flyin {
@@ -651,17 +684,6 @@ main {
     color: #091e42;
     margin-top: 114px;
     margin-bottom: 16px;
-  }
-
-  .self-intro {
-    width: 50vw;
-    height: 148px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #344563;
-    margin-bottom: 10px;
   }
 
   .social-connect {
@@ -864,5 +886,9 @@ main {
     column-gap: 10px;
     font-weight: 900;
     list-style: none;
+  }
+
+  .overlay {
+    display: none;
   }
 }
