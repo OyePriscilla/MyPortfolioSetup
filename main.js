@@ -25,3 +25,8 @@ overlayLinkTwo.addEventListener('click', ()=>{
 overlayLinkThree.addEventListener('click', ()=>{
     overlay.style.display ="none"
 })
+
+/* JS OBJECT PRACTISE */
+    const projectName = document.querySelector('.tonic');
+    console.log(projectName.textContent)
+
