@@ -5,6 +5,7 @@ This Project is created purposely to learn how to build Portfolio.
 * VsCode
 * HTML
 * CSS
+* JS
 
 ## Getting Started
 
