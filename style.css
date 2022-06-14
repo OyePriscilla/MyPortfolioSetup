@@ -521,6 +521,7 @@ main {
   z-index: 5000;
   mix-blend-mode: multiply;
   backdrop-filter: blur(10px);
+  display: none;
 }
 
 .overlay img {
