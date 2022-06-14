@@ -19,7 +19,6 @@ a:hover {
 .general-container {
   display: flex;
   flex-direction: column;
-  /* height: 5410px; */
   left: 11282px;
   top: -1883px;
   border-radius: 0;
@@ -66,7 +65,6 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .desktop-nav {
@@ -310,18 +308,6 @@ main {
   background-image: url(resources/img/Baseaboutmyself.png);
 }
 
-/* .workss-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 375px;
-  height: 1200px;
-  background-image: url(resources/img/Baseaboutmyself.png);
-  position: absolute;
-  top: 3280px;
-  left: 0;
-} */
-
 .about-me {
   height: 409px;
   width: 327px;
@@ -540,7 +526,7 @@ main {
   text-transform: uppercase;
 }
 
-.overlay ul{
+.overlay ul {
   margin-top: 80px;
   margin-left: 12px;
 }
@@ -589,6 +575,14 @@ main {
   .self-intro {
     animation-duration: 0.15s;
     animation-name: flyin;
+    width: 50vw;
+    height: 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #344563;
+    margin-bottom: 10px;
   }
 
   @keyframes flyin {
@@ -690,17 +684,6 @@ main {
     color: #091e42;
     margin-top: 114px;
     margin-bottom: 16px;
-  }
-
-  .self-intro {
-    width: 50vw;
-    height: 148px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #344563;
-    margin-bottom: 10px;
   }
 
   .social-connect {
@@ -909,5 +892,3 @@ main {
     display: none;
   }
 }
-
-
