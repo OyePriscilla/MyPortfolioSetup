@@ -6,6 +6,36 @@ const overlayLinkOne = document.querySelector('.overlay-link-one');
 const overlayLinkTwo = document.querySelector('.overlay-link-two');
 const overlayLinkThree = document.querySelector('.overlay-link-three');
 const desktopWorkSection = document.getElementById('desktop-works');
+const mobileModalButtonOne = document.querySelector('#bttn');
+const mobileModalButtonTwo = document.querySelector('.btn-touch-two');
+const mobileModalButtonThree = document.querySelector('.btn-touch-three');
+const mobileModalButtonFour = document.querySelector('.btn-touch-four');
+const closeMobileButton = document.querySelector('.close-mobile-button');
+
+mobileModalButtonOne.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+mobileModalButtonTwo.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+mobileModalButtonThree.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+mobileModalButtonFour.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+closeMobileButton.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'block';
+  document.querySelector('.mobile-modal-container').style.display = 'none';
+});
 
 menu.addEventListener('click', () => {
   overlay.style.display = 'block';
@@ -36,8 +66,8 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_img: './images/desktop-works/work-one.png',
     tecnologies: ['html', 'css', 'javascript'],
-    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-1/',
-    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-1',
+    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
   },
   {
     id: 2,
@@ -46,8 +76,8 @@ const projects = [
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     featured_img: './images/desktop-works/work-two.png',
     tecnologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-2/',
-    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-2',
+    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
   },
   {
     id: 3,
@@ -56,8 +86,8 @@ const projects = [
       'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     featured_img: './images/desktop-works/work-three.png',
     tecnologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-3/',
-    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-3',
+    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
   },
   {
     id: 4,
@@ -66,8 +96,8 @@ const projects = [
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     featured_img: './images/desktop-works/work-four.png',
     tecnologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-4/',
-    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-4',
+    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
   },
 ];
 
@@ -96,7 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
     .map((tech) => `<li>${tech}</li>`)
     .join('')}
                   </ul>
-                  <button class='pop-desktop-modal-btn' type="submit"  data-id=${
+                  <button class='pop-desktop-modal-btn' id="btnProject" type="submit"  data-id=${
   projects[i].id
 }>See Project</button>
                 </div>
@@ -104,4 +134,15 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   desktopWorkSection.innerHTML = projectsInHtmlVersion;
   return (desktopWorkSection.innerHTML);
+});
+
+// event delegation will allow us to access any JS dynamic object
+document.addEventListener('click', (e) => {
+  if (e.target.className === 'pop-desktop-modal-btn') {
+    document.querySelector('.desktop-modal-container').style.display = 'block';
+    return;
+  }
+  if (e.target.className === 'close-desktop-modal') {
+    document.querySelector('.desktop-modal-container').style.display = 'none';
+  }
 });
