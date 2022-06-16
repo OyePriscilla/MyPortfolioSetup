@@ -536,6 +536,10 @@ main {
   margin: 15px 0;
 }
 
+#desktop-works {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -691,7 +695,7 @@ main {
   }
 
   main {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     height: 2694px;
@@ -714,13 +718,6 @@ main {
 
   .snapshoot img {
     display: none;
-  }
-
-  .snapshoot-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 44px;
-    gap: 24px;
   }
 
   .workss {
@@ -890,5 +887,131 @@ main {
 
   .overlay {
     display: none;
+  }
+
+   /* Works section */
+   #desktop-works {
+     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 120px;
+    grid-gap: 72px;
+    background: #e5e5e5;
+    padding-top: 80px;
+  }
+
+  #desktop-works .work {
+    background-color: #fff;
+    border: 2px solid #dfe1e6;
+    border-radius: 24px;
+    max-width: 1156px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 14px;
+    transition: 0.3s ease;
+  }
+
+  #desktop-works .work:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
+    transform: scale(1.01);
+  }
+
+  #desktop-works .work:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  #desktop-works .work .left-content img {
+    max-width: 100%;
+    background: #fff;
+  }
+
+  #desktop-works .work .right-content h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  #desktop-works .work .role span:nth-child(1) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  #desktop-works .work .role .skilll,
+  #desktop-works .work .role .year {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #desktop-works .work .role {
+    display: flex;
+    align-items: center;
+  }
+
+  #desktop-works .work .right-content .role img {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+
+  #desktop-works .work .task {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    max-width: 496px;
+  }
+
+  #desktop-works .work .right-content ul li {
+    list-style: none;
+    margin-right: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    color: #6070ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+  }
+
+  #desktop-works .work ul {
+    display: flex;
+  }
+
+  #desktop-works .work button {
+    text-decoration: none;
+    color: #396df2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    background-color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    margin-top: 25px;
+  }
+
+  #desktop-works .work button:hover {
+    background: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }  
+
+  .work {
+    width: 100%;
   }
 }
