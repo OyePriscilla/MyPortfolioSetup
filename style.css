@@ -540,6 +540,10 @@ main {
   display: none;
 }
 
+.desktop-modal-container{
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -1024,7 +1028,7 @@ main {
     width: 100vw;
     background: #c1c7d0;
     z-index: 5;
-    display: none;
+    /* display: none; */
     overflow-y: auto;
   }
 
