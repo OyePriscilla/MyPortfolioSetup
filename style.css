@@ -1140,6 +1140,10 @@ main {
     align-items: center;
     justify-content: space-around;
   }
+
+  .mobile-modal-container{
+    display: none;
+  }
 }
 
 /* Mobile modal */
