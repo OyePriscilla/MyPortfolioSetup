@@ -540,7 +540,7 @@ main {
   display: none;
 }
 
-.desktop-modal-container{
+.desktop-modal-container {
   display: none;
 }
 
@@ -1140,4 +1140,113 @@ main {
     align-items: center;
     justify-content: space-around;
   }
+}
+
+/* Mobile modal */
+.mobile-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #c1c7d0;
+  z-index: 5;
+  overflow-y: scroll;
+  display: none;
+}
+.mobile-modal {
+  max-width: 343px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: 20px auto 20px auto;
+  padding: 16px;
+}
+
+.mobile-modal div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-modal h1 {
+  color: #172b4d;
+  font-size: 32px;
+}
+
+.mobile-modal div:nth-of-type(2) span:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.mobile-modal div:nth-of-type(2) img {
+  margin: 0 5px;
+}
+
+.mobile-modal div:nth-of-type(2) .skill,
+.mobile-modal div:nth-of-type(2) .year {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.mobile-modal .modal-project-img {
+  margin-top: 12px;
+}
+.mobile-modal .modal-project-img img {
+  width: 100%;
+}
+
+.mobile-modal p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.mobile-modal ul {
+  margin-top: 15px;
+  display: flex;
+}
+
+.mobile-modal ul li {
+  list-style: none;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 12px;
+  color: #6070ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.mobile-modal .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mobile-modal .buttons a {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  border-radius: 8px;
+  width: 146px;
+  padding: 12px 14px;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.mobile-modal .buttons span {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
