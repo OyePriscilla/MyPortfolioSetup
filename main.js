@@ -162,3 +162,7 @@ document.addEventListener('click', (e) => {
     document.querySelector('.desktop-modal-container').style.display = 'none';
   }
 });
+
+const contactForm = document.getElementById('form');
+const [userName, email, message] = form.elements;
+
