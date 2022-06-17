@@ -7,6 +7,21 @@ const overlayLinkTwo = document.querySelector('.overlay-link-two');
 const overlayLinkThree = document.querySelector('.overlay-link-three');
 const desktopWorkSection = document.getElementById('desktop-works');
 
+document
+  .querySelector('#btn-submit-form')
+  .addEventListener('click', (event) => {
+    const email = document.getElementById('email-contact').value;
+    const error = document.querySelector('.error-email-class');
+    const isLowerCase = (str) => str === str.toLowerCase();
+    if (!isLowerCase(email)) {
+      event.preventDefault();
+      error.style.display = 'block';
+      setTimeout(() => {
+        error.style.display = 'none';
+      }, 5000);
+    }
+  });
+
 menu.addEventListener('click', () => {
   overlay.style.display = 'block';
 });
@@ -103,5 +118,5 @@ window.addEventListener('DOMContentLoaded', () => {
               </div>`;
   }
   desktopWorkSection.innerHTML = projectsInHtmlVersion;
-  return (desktopWorkSection.innerHTML);
+  return desktopWorkSection.innerHTML;
 });
