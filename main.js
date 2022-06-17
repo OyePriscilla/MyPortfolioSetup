@@ -6,6 +6,7 @@ const overlayLinkOne = document.querySelector('.overlay-link-one');
 const overlayLinkTwo = document.querySelector('.overlay-link-two');
 const overlayLinkThree = document.querySelector('.overlay-link-three');
 const desktopWorkSection = document.getElementById('desktop-works');
+
 const mobileModalButtonOne = document.querySelector('#bttn');
 const mobileModalButtonTwo = document.querySelector('.btn-touch-two');
 const mobileModalButtonThree = document.querySelector('.btn-touch-three');
@@ -37,6 +38,21 @@ closeMobileButton.addEventListener('click', () => {
   document.querySelector('.mobile-modal-container').style.display = 'none';
 });
 
+document
+  .querySelector('#btn-submit-form')
+  .addEventListener('click', (event) => {
+    const email = document.getElementById('email-contact').value;
+    const error = document.querySelector('.error-email-class');
+    const isLowerCase = (str) => str === str.toLowerCase();
+    if (!isLowerCase(email)) {
+      event.preventDefault();
+      error.style.display = 'block';
+      setTimeout(() => {
+        error.style.display = 'none';
+      }, 5000);
+    }
+  });
+
 menu.addEventListener('click', () => {
   overlay.style.display = 'block';
 });
@@ -66,8 +82,8 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_img: './images/desktop-works/work-one.png',
     tecnologies: ['html', 'css', 'javascript'],
-    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
-    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-1/',
+    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-1',
   },
   {
     id: 2,
@@ -76,8 +92,8 @@ const projects = [
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     featured_img: './images/desktop-works/work-two.png',
     tecnologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
-    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-2/',
+    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-2',
   },
   {
     id: 3,
@@ -86,8 +102,8 @@ const projects = [
       'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     featured_img: './images/desktop-works/work-three.png',
     tecnologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
-    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-3/',
+    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-3',
   },
   {
     id: 4,
@@ -96,8 +112,8 @@ const projects = [
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     featured_img: './images/desktop-works/work-four.png',
     tecnologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-    live_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
-    source_link: 'https://github.com/OyePriscilla/MyPortfolioSetup',
+    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-4/',
+    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-4',
   },
 ];
 
@@ -126,14 +142,14 @@ window.addEventListener('DOMContentLoaded', () => {
     .map((tech) => `<li>${tech}</li>`)
     .join('')}
                   </ul>
-                  <button class='pop-desktop-modal-btn' id="btnProject" type="submit"  data-id=${
+                  <button class='pop-desktop-modal-btn' type="submit"  data-id=${
   projects[i].id
 }>See Project</button>
                 </div>
               </div>`;
   }
   desktopWorkSection.innerHTML = projectsInHtmlVersion;
-  return (desktopWorkSection.innerHTML);
+  return desktopWorkSection.innerHTML;
 });
 
 // event delegation will allow us to access any JS dynamic object

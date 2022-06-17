@@ -1263,3 +1263,8 @@ main {
 #portfolio {
   width: 100%;
 }
+
+.error-message {
+  display: none;
+  color: red;
+}
