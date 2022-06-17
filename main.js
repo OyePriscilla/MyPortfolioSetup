@@ -166,3 +166,12 @@ document.addEventListener('click', (e) => {
 const contactForm = document.getElementById('form');
 const [userName, email, message] = form.elements;
 
+if (!localStorage.getItem('form-detail')) {
+  const data = {
+    nameContent: '',
+    emailContent: '',
+    messageContent: ''
+  }
+  localStorage.setItem('form-detail', JSON.stringify(data));
+}
+
