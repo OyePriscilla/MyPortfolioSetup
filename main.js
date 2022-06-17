@@ -7,6 +7,37 @@ const overlayLinkTwo = document.querySelector('.overlay-link-two');
 const overlayLinkThree = document.querySelector('.overlay-link-three');
 const desktopWorkSection = document.getElementById('desktop-works');
 
+const mobileModalButtonOne = document.querySelector('#bttn');
+const mobileModalButtonTwo = document.querySelector('.btn-touch-two');
+const mobileModalButtonThree = document.querySelector('.btn-touch-three');
+const mobileModalButtonFour = document.querySelector('.btn-touch-four');
+const closeMobileButton = document.querySelector('.close-mobile-button');
+
+mobileModalButtonOne.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+mobileModalButtonTwo.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+mobileModalButtonThree.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+mobileModalButtonFour.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'none';
+  document.querySelector('.mobile-modal-container').style.display = 'block';
+});
+
+closeMobileButton.addEventListener('click', () => {
+  document.querySelector('.desktop-mode').style.display = 'block';
+  document.querySelector('.mobile-modal-container').style.display = 'none';
+});
+
 document
   .querySelector('#btn-submit-form')
   .addEventListener('click', (event) => {
@@ -119,4 +150,15 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   desktopWorkSection.innerHTML = projectsInHtmlVersion;
   return desktopWorkSection.innerHTML;
+});
+
+// event delegation will allow us to access any JS dynamic object
+document.addEventListener('click', (e) => {
+  if (e.target.className === 'pop-desktop-modal-btn') {
+    document.querySelector('.desktop-modal-container').style.display = 'block';
+    return;
+  }
+  if (e.target.className === 'close-desktop-modal') {
+    document.querySelector('.desktop-modal-container').style.display = 'none';
+  }
 });
