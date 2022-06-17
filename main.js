@@ -187,3 +187,13 @@ const setBrowserData = (element, elementValue) => {
 const setFormDetails = (element, elementValue) => {
   element.value = elementValue;
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  setBrowserData(userName, "nameContent");
+  setBrowserData(email, "emailContent");
+  setBrowserData(message, "messageContent");
+  const data = JSON.parse(localStorage.getItem("form-detail"));
+  setFormDetails(userName, data.nameContent);
+  setFormDetails(email, data.emailContent);
+  setFormDetails(message, data.messageContent);
+});
