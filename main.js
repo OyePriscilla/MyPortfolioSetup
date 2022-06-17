@@ -163,6 +163,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Local storage
 const contactForm = document.getElementById('form');
 const [userName, email, message] = form.elements;
 
@@ -174,4 +175,3 @@ if (!localStorage.getItem('form-detail')) {
   }
   localStorage.setItem('form-detail', JSON.stringify(data));
 }
-
