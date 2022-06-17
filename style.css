@@ -1266,7 +1266,5 @@ main {
 
 .error-message {
   display: none;
-  color: red;
-
-  /* background-color: none; */
+  color: red;  
 }
