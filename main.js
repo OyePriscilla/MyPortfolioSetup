@@ -153,7 +153,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // event delegation will allow us to access any JS dynamic object
-document.addEventListener('click', (e) => {
+document.addEventListener('clickc', (e) => {
   if (e.target.className === 'pop-desktop-modal-btn') {
     document.querySelector('.desktop-modal-container').style.display = 'block';
     return;
@@ -173,7 +173,7 @@ if (!localStorage.getItem('form-detail')) {
     emailContent: '',
     messageContent: '',
   };
-  localStorage.setItem('form-detail', JSON.stringify(data));
+  localStorage.setItem('form-detail');
 }
 
 const setBrowserData = (element, elementValue) => {
