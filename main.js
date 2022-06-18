@@ -162,3 +162,38 @@ document.addEventListener('click', (e) => {
     document.querySelector('.desktop-modal-container').style.display = 'none';
   }
 });
+
+// Local storage
+const contactForm = document.getElementById('form');
+const [userName, email, message] = contactForm.elements;
+
+if (!localStorage.getItem('form-detail')) {
+  const data = {
+    nameContent: '',
+    emailContent: '',
+    messageContent: '',
+  };
+  localStorage.setItem('form-detail', JSON.stringify(data));
+}
+
+const setBrowserData = (element, elementValue) => {
+  element.addEventListener('change', () => {
+    const retrivedData = JSON.parse(localStorage.getItem('form-detail'));
+    retrivedData[elementValue] = element.value;
+    localStorage.setItem('form-detail', JSON.stringify(retrivedData));
+  });
+};
+
+const setFormDetails = (element, elementValue) => {
+  element.value = elementValue;
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  setBrowserData(userName, 'nameContent');
+  setBrowserData(email, 'emailContent');
+  setBrowserData(message, 'messageContent');
+  const data = JSON.parse(localStorage.getItem('form-detail'));
+  setFormDetails(userName, data.nameContent);
+  setFormDetails(email, data.emailContent);
+  setFormDetails(message, data.messageContent);
+});
