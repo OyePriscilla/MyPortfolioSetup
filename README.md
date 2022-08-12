@@ -1,5 +1,5 @@
 # MyPortfolio Project
-This Project is created purposely to learn how to build Portfolio.
+This Project is created purposely to learn how to build Portfolio. It's a collections of projects I had worked on, skills acquired; and my experiences.
 
 ## Built With
 * VsCode
