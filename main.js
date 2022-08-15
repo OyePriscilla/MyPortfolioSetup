@@ -78,8 +78,8 @@ const projects = [
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     featured_img: './images/desktop-works/work-four.png',
     tecnologies: ['html', 'css', 'javascript'],
-    live_link: 'https://alphayowakarindi.github.io/My-Portfolio-4/',
-    source_link: 'https://github.com/alphayowakarindi/My-Portfolio-4',
+    live_link: '#',
+    source_link: '#',
     fullDescription: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas animi error, nobis et modi consectetur sapiente laborum nisi similique, eos, fugit repudiandae dolore esse? Debitis eligendi
      eum reprehenderit atque, labore neque, molestias distinctio similique eius molestiae et maxime!`,
   },
@@ -87,9 +87,9 @@ const projects = [
 
 const dynamicContent = document.querySelector('.dynamic-content');
 window.addEventListener('DOMContentLoaded', () => {
-  let projectsInHtmlVersion = '';
+  let dynamicContentInnerHTML = '';
   for (let i = 0; i < projects.length; i += 1) {
-    projectsInHtmlVersion += `
+    dynamicContentInnerHTML += `
                 <div class="portfolio-content">
                 <div class="img-container">
                   <img class="project-img" src="${projects[i].featured_img}" alt="" />
@@ -115,7 +115,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
               </div>`;
   }
-  dynamicContent.innerHTML = projectsInHtmlVersion;
+  dynamicContent.innerHTML = dynamicContentInnerHTML;
   return dynamicContent.innerHTML;
 });
 
