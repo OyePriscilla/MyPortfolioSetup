@@ -195,6 +195,18 @@ a:hover {
   background-image: url(resources/img/Baseaboutmyself.png);
 }
 
+.lang-img {
+  width: 50px;
+  position: relative;
+  right: 32px;
+}
+
+.skill-border {
+  border-bottom: 1px solid #c8c8ca;
+  border-top: 1px solid #c8c8ca;
+  width: 100%;
+}
+
 .about-me {
   height: 409px;
   width: 327px;
@@ -204,6 +216,11 @@ a:hover {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
+}
+
+.skill-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-me h1 {
@@ -275,8 +292,8 @@ a:hover {
 }
 
 .btt-arr {
-  margin-left: 100px;
-  font-size: 22px;
+  margin-left: 189px;
+  font-size: 32px;
   background: transparent;
   border: none;
 }
@@ -551,18 +568,12 @@ a:hover {
   }
 
   .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    position: absolute;
-    width: 1375px;
+    width: 100%;
     top: 24px;
-    background-image: none;
     background-image: url(resources/img/Header-bg.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 769px;
     background-origin: content-box;
   }
@@ -673,20 +684,12 @@ a:hover {
     width: 40%;
   }
 
-  .btt-arr {
-    margin-left: 408px;
-  }
-
   .skill-margin {
     margin-left: 62px;
   }
 
   .skill-lang {
     margin-left: 392px;
-  }
-
-  .lang-img {
-    margin-left: 0;
   }
 
   .getresume {
@@ -710,7 +713,7 @@ a:hover {
   }
 
   .framework {
-    width: 604px;
+    width: 100%;
   }
 
   input[type="email"]::-webkit-input-placeholder,
