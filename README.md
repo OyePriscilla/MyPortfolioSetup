@@ -1,5 +1,9 @@
 # MyPortfolio Project
-This Project is created purposely to learn how to build Portfolio. It's a collections of projects I had worked on, skills acquired; and my experiences.
+This Project is created purposely to learn how to build Portfolio. It's a collections of projects I had worked on, skills acquired; and the knowledge I had acquired so far.
+
+
+![Design Template](./resources/img/portfolio-img.png)
+
 
 ## Built With
 * VsCode
@@ -22,16 +26,8 @@ Clone this repository on to your local PC
 * Clone the repository with the command: git clone (copied link); like so: https://github.com/OyePriscilla/MyPortfolioSetup
 * After the clone, type in the command cd MyPortfolioSetup to access the directory on the terminal
 
-## Setup
-
-## Install
-
-## Usage
-
-## Run tests
-
 ## Deployment
-Access the online version of this project through this link [PriscillaPortfolio](https://oyepriscilla.github.io/MyPortfolioSetup)
+Access the online version of this project through this link [Live Demo Link](https://oyepriscilla.github.io/MyPortfolioSetup)
 
 ## Author
 👤 **Author1**
@@ -40,13 +36,6 @@ Access the online version of this project through this link [PriscillaPortfolio]
 - GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
 - Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
 - LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
-
-👤 **Author2**
- **Abdelmejid Oumer Ali**
- 
-- GitHub: [@amejid](https://github.com/amejid)
-- Twitter: [@amejidoumer](https://twitter.com/amejidoumer)
-- LinkedIn: [amejid](https://linkedin.com/in/amejid)
 
 ## Contibution
 Contributions, issues, and feature requests are welcome!
