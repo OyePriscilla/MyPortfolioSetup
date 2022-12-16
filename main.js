@@ -73,15 +73,14 @@ const projects = [
   },
   {
     id: 4,
-    name: 'Uber',
+    name: 'LeaderBoard',
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featured_img: './images/desktop-works/work-four.png',
+      'LeaderBoard was built to learn the how to interprete API documentation, understand how to send and receive data from API.',
+    featured_img: './resources/img/leaderboard.jpg',
     tecnologies: ['html', 'css', 'javascript'],
-    live_link: '#',
-    source_link: '#',
-    fullDescription: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas animi error, nobis et modi consectetur sapiente laborum nisi similique, eos, fugit repudiandae dolore esse? Debitis eligendi
-     eum reprehenderit atque, labore neque, molestias distinctio similique eius molestiae et maxime!`,
+    live_link: 'https://oyepriscilla.github.io/Leaderboard-Api/',
+    source_link: 'https://github.com/OyePriscilla/Leaderboard-Api',
+    fullDescription: `LeaderBoard was built to learn the how to interprete API documentation, understand how to send and receive data from API. The name and score of the chess game players are sent to leaderboard API.`,
   },
 ];
 
