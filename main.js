@@ -2,6 +2,16 @@ const menu = document.querySelector(".hamburger");
 const overlay = document.querySelector(".overlay");
 const close = document.querySelector(".close-icon");
 
+function logItem(e) {
+  const item = document.querySelector(`[data-id=${e.target.id}]`);
+  item.toggleAttribute('show');
+}
+
+const chapters = document.querySelectorAll('ul');
+chapters.forEach((chapter) => {
+  chapter.addEventListener('toggle', logItem);
+});
+
 const overlayLinks = document.querySelectorAll(".overlay-link");
 overlayLinks.forEach((overlayLink) => {
   overlayLink.addEventListener("click", () => {
@@ -45,6 +55,7 @@ const projects = [
       "https://oyepriscilla.github.io/First-Microverse-Capstone-Project/",
     source_link:
       "https://github.com/OyePriscilla/First-Microverse-Capstone-Project",
+    stack: ["Education", "Front End Dev", "2022"],
   },
   {
     id: 2,
@@ -55,6 +66,8 @@ const projects = [
     tecnologies: ["html", "css", "javascript", "React"],
     live_link: "https://bespoke-pastelito-6aabde.netlify.app/",
     source_link: " https://github.com/OyePriscilla/calculatorappreact",
+    stack: ["Math", "Front End Dev", "2022"],
+
   },
   {
     id: 3,
@@ -64,6 +77,7 @@ const projects = [
     tecnologies: ["html", "css", "javascript"],
     live_link: "https://oyepriscilla.github.io/todo/",
     source_link: "https://github.com/OyePriscilla/todo",
+    stack: ["Reminder", "Front End Dev", "2022"],
   },
   {
     id: 4,
@@ -74,6 +88,7 @@ const projects = [
     tecnologies: ["html", "css", "javascript"],
     live_link: "https://oyepriscilla.github.io/Leaderboard-Api/",
     source_link: "https://github.com/OyePriscilla/Leaderboard-Api",
+    stack: ["Game", "Front End Dev", "2022"],
   },
 ];
 
@@ -90,16 +105,18 @@ window.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="project-details">
                   <h3 class="tonic">${projects[i].name}</h3>
-                  <div class="tech-lists">
-                    <span>Front End Dev</span> <img src="images/works/counter.svg" alt="" />
-                    <span class="year">2022</span>
-                  </div>
+                  <ul class="stack-lists">
+                  ${projects[i].stack
+                    .map((tech) => `<li class="stack-list">${tech}</li>`)
+                    .join("")}
+
+                  </ul>
                   <p class="">
                   ${projects[i].description}
                   </p>
                   <ul>
                     ${projects[i].tecnologies
-                      .map((tech) => `<li>${tech}</li>`)
+                      .map((tech) => `<li class="tech-list">${tech}</li>`)
                       .join("")}
                   </ul>
                  <div class="link-buttons">
