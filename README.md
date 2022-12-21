@@ -27,7 +27,7 @@ Clone this repository on to your local PC
 * After the clone, type in the command cd MyPortfolioSetup to access the directory on the terminal
 
 ## Deployment
-Access the online version of this project through this link [Live Demo Link](shorturl.at/lnoLN)
+Access the online version of this project through this link [Live Demo Link](https://t.ly/D93C)
 
 ## Author
 👤 **Author1**
