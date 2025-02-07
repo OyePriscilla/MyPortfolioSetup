@@ -1,5 +1,5 @@
 # MyPortfolio Project
-This Project is created purposely to learn how to build a Portfolio. It's a collection of projects I had worked on, skills acquired; and the knowledge I have acquired so far.
+This project was created to learn how to build a portfolio. It's a collection of projects I have worked on, skills acquired; and the knowledge I have acquired so far.
 
 
 [Design Template](./resources/img/portfolio.png)
@@ -27,7 +27,7 @@ Clone this repository onto your local PC
 * After the clone, type in the command cd MyPortfolioSetup to access the directory on the terminal
 
 ## Deployment
-Access the online version of this project through this link [Live Demo Link]([https://bit.ly/3HWCErF](https://oyepriscilla.github.io/MyPortfolioSetup/))
+Access the online version of this project through this link [Live Demo Link](https://oyepriscilla.github.io/MyPortfolioSetup/)
 
 ## Author
 👤 **Author1**
