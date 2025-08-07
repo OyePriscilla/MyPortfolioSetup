@@ -47,7 +47,7 @@ const projects = [
     id: 1,
     name: "E-Learning",
     description: `This is an e-learning platform where you get educated on all issues of life. The importance of E-Learning education is that it is quick and does not require much cost.
-    The long training period, infrastructure, stationery, travel expenses, etc. is reduced. It makes information easy to grasp and absorb. Do you want to grow in your area of expertise?
+    The long training period, infrastructure, stationery, travel expenses, etc., are reduced. It makes information easy to grasp and absorb. Do you want to grow in your area of expertise?
         Stay put on this website. It's all-encompassing!!!`,
     featured_img: "./resources/img/capstone.png",
     tecnologies: ["html", "css", "javascript"],
@@ -59,9 +59,22 @@ const projects = [
   },
   {
     id: 2,
+    name: "Bible Quiz WebApp",
+    description: `Challenge your Bible knowledge in a fun, interactive way!
+This engaging web application allows users to explore Scripture through timed quizzes, score tracking, and character-based gameplay. Designed with learners in mind, the game combines education and entertainment — perfect for youth groups, Bible study sessions, or personal growth. Whether you're a casual reader or a serious scholar, there's a level for everyone!`,
+    featured_img: "./resources/img/BibleQuiz.png",
+    tecnologies: ["REACT", "tailwindcss", "TypeScript", "vite"],
+    live_link:
+      "https://oyepriscilla.github.io/QuizAppFrontend",
+    source_link:
+      "https://github.com/OyePriscilla/QuizAppFrontend",
+    stack: ["Education", "Front End Dev", "2022"],
+  },
+  {
+    id: 3,
     name: "Calculator",
     description: `This calculator can be used to do basic arithmetic operations like addition, subtraction, division, multiplication, etc.
-    Do your calculation anywhere and any time of the day! Feel free to use it.`,
+    Do your calculations anywhere andat  any time of the day! Feel free to use it.`,
     featured_img: "./resources/img/calculator.png",
     tecnologies: ["html", "css", "javascript", "React"],
     live_link: "https://bespoke-pastelito-6aabde.netlify.app/",
@@ -70,7 +83,7 @@ const projects = [
 
   },
   {
-    id: 3,
+    id: 4,
     name: "ToDo App",
     description: `With the todo App, you can delete completed todo(s) both from the UI and local storage; the todo can be edited, and the completed task will be marked as completed. I got a good understanding of JS CRUD operation in the process of building this app.`,
     featured_img: "./resources/img/todo.png",
@@ -80,7 +93,7 @@ const projects = [
     stack: ["Reminder", "Front End Dev", "2022"],
   },
   {
-    id: 4,
+    id: 5,
     name: "LeaderBoard",
     description:
       "The leaderBoard was developed to learn how to interpret API documentation and understand how to send and receive data from API.",
