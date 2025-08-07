@@ -1,250 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Priscilla Oyebade - Full-stack Developer & Open-source Enthusiast. Building innovative web solutions with modern technologies." />
+    <meta name="keywords" content="Full-stack Developer, JavaScript, React, Ruby on Rails, Web Development, Portfolio" />
+    <meta name="author" content="Priscilla Oyebade" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Priscilla Oyebade - Full-stack Developer" />
+    <meta property="og:description" content="Passionate about clean code, accessible design, and impactful solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oyepriscilla.github.io" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Priscilla's Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <title>Priscilla Oyebade | Full-stack Developer</title>
   </head>
 
   <body>
-    <div class="desktop-mode">
-      <div class="general-container">
-        <div class="central-wrapper">
-          <header class="header-class">
-            <div class="logo-text">
-              <a class="logo-text" href="#">OyePrisci</a>
-            </div>
-            <div>
-              <nav>
-                <ul class="desktop-nav">
-                  <li>
-                    <a class="header-typo" href="https://t.ly/ky_q">Portfolio</a>
-                  </li>
-                  <li><a class="header-typo" href="https://t.ly/fjGs">About</a></li>
-                  <li><a class="header-typo" href="https://t.ly/5JeJ">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <nav class="hamburger">
-              <a href="#"
-                ><img src="resources/img/Union.png" alt="menu-icon"
-              /></a>
-            </nav>
-          </header>
-          <section class="main-wrapper">
-            <div class="main-content main-content-desktop">
-              <h1 class="name name-header">
-                I am Priscilla EbunOluwa OYEBADE <br />
-                Good to have you here!
-              </h1>
-              <p class="self-intro">
-                Full-stack web developer and open-source enthusiast passionate about clean code, 
-                accessible design, and impactful solutions. I thrive in collaborative, remote-first 
-                environments and adapt quickly across languages, frameworks, and technologies. 
-                Currently building PrintEase, a tech-driven printing solution revolutionizing 
-                Student productivity — starting at UNILAG.
-              </p>
-              <a href="#contact" class="social-connect">LET'S CONNECT</a>
-              <ul class="social-media-icons">
-                <li>
-                  <a href="https://twitter.com/OyebadePriscil1"
-                    ><img
-                      class="media1"
-                      src="resources/img/Vector.png"
-                      alt="twitter"
-                  /></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/priscilla-oyebade-aa35b8238/"
-                    ><img
-                      class="media2"
-                      src="resources/img/Linkedinicon.png"
-                      alt="linkedln"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://github.com/OyePriscilla"
-                    ><img
-                      class="media3"
-                      src="resources/img/Vector1.png"
-                      alt="github"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://github.com/OyePriscilla"
-                    ><img
-                      class="media4"
-                      src="resources/img/Vector2.png"
-                      alt="angelIst"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://angel.co/u/priscilla-oyebade"
-                    ><img
-                      class="media5"
-                      src="resources/img/Vector3.png"
-                      alt="amazon"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="spinner"></div>
+        <p>Loading Portfolio...</p>
+      </div>
+    </div>
 
-        <div id="portfolio">
-          <div class="dynamic-content"></div>
-        </div>
+    <!-- Main Container -->
+    <main class="main-container" id="main-container">
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun" id="theme-icon"></i>
+      </button>
 
-        <section class="workss" id="about">
-          <div class="workss-wrapper">
-            <div class="about-me">
-              <h1 class="name name2">About Me!</h1>
-              <p class="self-intro self">
-                I have passion for clean code and I thrive to learn new
-                technologies everyday and construct creative apps for companies.
-                For the last several months I have been completely immersed and
-                engaged in developing web applications ranging from small
-                landing pages to API based applications.
-              </p>
-              <a href="#contact" class="social-connect">LET'S CONNECT</a>
-              <ul class="social-media-icons connect">
-                <li>
-                  <a href="https://twitter.com/OyebadePriscil1"
-                    ><img
-                      class="media1 media11"
-                      src="resources/img/Vector.png"
-                      alt="twitter"
-                  /></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/priscilla-oyebade-aa35b8238/"
-                    ><img
-                      class="media2 media22"
-                      src="resources/img/Linkedinicon.png"
-                      alt="linkedln"
-                  /></a>
-                </li>
-                <li>
-                  <a
-                    href="git@github.com:OyePriscilla/First-Microverse-Capstone-Project.git"
-                    ><img
-                      class="media3 media33"
-                      src="resources/img/Vector1.png"
-                      alt="fact"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img
-                      class="media4 media44"
-                      src="resources/img/Vector2.png"
-                      alt="github"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://angel.co/u/priscilla-oyebade"
-                    ><img
-                      class="media5 media55"
-                      src="resources/img/Vector3.png"
-                      alt="amazon"
-                  /></a>
-                </li>
-              </ul>
-              <a
-                class="btn-touch"
-                href="https://docs.google.com/document/d/17_PUsEskI4aghNSBzafdee-j0In9-IEvKhKoWHVlTd4/edit"
-                >Get Resume</a
-              >
-            </div>
-            <div class="skill-list">
-              <div>
-                <div class="skill-flex">
-                  <p class="skill-format">Languages</p>
-                  <i class="fa fa-angle-down fa-2x"></i>
-                </div>
-                <div>
-                  <ul class="tech-toolss">
-                    <li class="listimg">
-                      <img src="resources/img/Javas.png" alt="javascript" /><a
-                        href="#"
-                        >Javascript</a
-                      >
-                    </li>
-                    <li class="listimg">
-                      <img src="resources/img/html.png" alt="html" /><a href="#"
-                        >HTML</a
-                      >
-                    </li>
-                    <li class="listimg">
-                      <img src="resources/img/css.png" alt="css" /><a href="#"
-                        >CSS</a
-                      >
-                    </li>
-                    <li class="listimg">
-                      <img src="resources/img/rubyy.jpeg" alt="css" /><a href="#"
-                        >Ruby</a
-                      >
-                    </li>
-                  </ul>
+      <!-- Navigation -->
+      <header class="header" id="header">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#home" class="logo-link">
+              <span class="logo-text">OyePrisci</span>
+              <span class="logo-dot">.</span>
+            </a>
+          </div>
+          
+          <nav class="nav" role="navigation">
+            <ul class="nav-list" id="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+          </nav>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-bar" id="progress-bar"></div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="hero-greeting">
+                <span class="wave">👋</span>
+                <span>Hello, I'm</span>
               </div>
-              <details class="tech-toolss tools-ul" id="2">
-                <summary>Framework</summary>
-                <ul class="tech-toolss tools-ul">
-                </li>
-                <li class="listimg">
-                  <img src="resources/img/react.png" alt="css" /><a href="#"
-                    >React</a
-                  >
-                </li>
-                <li class="listimg">
-                  <img src="resources/img/ruby.png" alt="css" /><a href="#"
-                    >Ruby <br> on Rails</a
-                  >
-                </li>
-                </ul>
-              </details>
-              <details id="3">
-                <summary>Skills</summary>
-                <ul class="skills-tools tools-ul">
-                  <li class="listimg">
-                    <img src="resources/img/collaboration.png" alt="javascript" /><a
-                      href="#"
-                      >Collaboration</a
-                    >
-                  </li>
-                  <li class="listimg">
-                    <img src="resources/img/leader.png" alt="html" /><a href="#"
-                      >Leadership</a
-                    >
-                  </li>
-                  <li class="listimg">
-                    <img src="resources/img/empathy.png" alt="css" /><a href="#"
-                      >Teamwork</a
-                    >
-                  </li>
-                  <li class="listimg">
-                    <img src="resources/img/patience.png" alt="css" /><a href="#"
-                      >Perseverance</a
-                    >
-                  </li>
-                </ul>
-              </details>
+              <h1 class="hero-title">
+                <span class="title-line">Priscilla</span>
+                <span class="title-line">EbunOluwa</span>
+                <span class="title-line highlight">OYEBADE</span>
+              </h1>
+              <div class="hero-subtitle">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor">|</span>
+              </div>
+              <p class="hero-description">
+                Full-stack web developer and open-source enthusiast passionate about clean code, 
+                accessible design, and impactful solutions. Currently building 
+                <strong>PrintEase</strong> — revolutionizing student productivity at UNILAG.
+              </p>
+              
+              <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary">
+                  <span>View My Work</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span>Let's Connect</span>
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+              
+              <div class="social-links">
+                <a href="https://github.com/OyePriscilla" class="social-link" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/priscilla-oyebade-aa35b8238/" class="social-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/OyebadePriscil1" class="social-link" aria-label="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://angel.co/u/priscilla-oyebade" class="social-link" aria-label="AngelList">
+                  <i class="fab fa-angellist"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="hero-visual">
+              <div class="hero-image">
+                <div class="floating-elements">
+                  <div class="floating-element" data-speed="0.5">💻</div>
+                  <div class="floating-element" data-speed="0.8">⚡</div>
+                  <div class="floating-element" data-speed="0.3">🚀</div>
+                  <div class="floating-element" data-speed="0.6">✨</div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+          
+          <div class="scroll-indicator">
+            <div class="scroll-arrow">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <span>Scroll to explore</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">
+              A collection of projects that showcase my skills and passion for creating impactful digital experiences.
+            </p>
+          </div>
+          
+          <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="react">React</button>
+          </div>
+          
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Projects will be dynamically generated here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                  Passionate about creating digital solutions that make a difference
+                </p>
+              </div>
+              
+              <div class="about-description">
+                <p>
+                  I'm a full-stack developer with a passion for clean code and innovative solutions. 
+                  I thrive in collaborative environments and adapt quickly across languages, frameworks, 
+                  and technologies.
+                </p>
+                <p>
+                  Currently, I'm building <strong>PrintEase</strong>, a tech-driven printing solution 
+                  that's revolutionizing student productivity at UNILAG. When I'm not coding, 
+                  you'll find me contributing to open-source projects or exploring new technologies.
+                </p>
+              </div>
+              
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number" data-target="50">0</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-target="2">0</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-target="100">0</div>
+                  <div class="stat-label">GitHub Contributions</div>
+                </div>
+              </div>
+              
+              <div class="about-actions">
+                <a href="https://docs.google.com/document/d/17_PUsEskI4aghNSBzafdee-j0In9-IEvKhKoWHVlTd4/edit" 
+                   class="btn btn-primary" target="_blank" rel="noopener">
+                  <span>Download Resume</span>
+                  <i class="fas fa-download"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span>Get In Touch</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="skills-section">
+              <h3 class="skills-title">Technical Skills</h3>
+              
+              <div class="skills-categories">
+                <div class="skill-category">
+                  <h4 class="category-title">
+                    <i class="fas fa-code"></i>
+                    Languages
+                  </h4>
+                  <div class="skills-list">
+                    <div class="skill-item">
+                      <img src="resources/img/Javas.png" alt="JavaScript" />
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/html.png" alt="HTML" />
+                      <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/css.png" alt="CSS" />
+                      <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/rubyy.jpeg" alt="Ruby" />
+                      <span>Ruby</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="skill-category">
+                  <h4 class="category-title">
+                    <i class="fas fa-layer-group"></i>
+                    Frameworks
+                  </h4>
+                  <div class="skills-list">
+                    <div class="skill-item">
+                      <img src="resources/img/react.png" alt="React" />
+                      <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/ruby.png" alt="Ruby on Rails" />
+                      <span>Ruby on Rails</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="skill-category">
+                  <h4 class="category-title">
+                    <i class="fas fa-users"></i>
+                    Soft Skills
+                  </h4>
+                  <div class="skills-list">
+                    <div class="skill-item">
+                      <img src="resources/img/collaboration.png" alt="Collaboration" />
+                      <span>Collaboration</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/leader.png" alt="Leadership" />
+                      <span>Leadership</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/empathy.png" alt="Teamwork" />
+                      <span>Teamwork</span>
+                    </div>
+                    <div class="skill-item">
+                      <img src="resources/img/patience.png" alt="Perseverance" />
+                      <span>Perseverance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
         <footer id="contact">
           <div class="footer-wrap">
             <div class="contact-detail">
@@ -258,42 +324,47 @@
 
             <form
               class="contact-form"
+              id="contact-form"
               action="https://formspree.io/f/mgeddpvp"
               method="post"
-              id="form"
             >
               <input
-                class="block-disp"
+                class="form-input"
                 type="text"
                 name="name"
-                placeholder="Priscilla"
+                placeholder="Your Name"
                 maxlength="30"
                 required
               />
+              <div id="name-error" class="field-error"></div>
+              
               <input
-                class="block-disp"
+                class="form-input"
                 type="email"
                 name="email"
-                id="email-contact"
-                placeholder="priscilla@gmail.com"
+                placeholder="your.email@example.com"
                 required
               />
+              <div id="email-error" class="field-error"></div>
+              
               <textarea
-                class="block-disp texttypo"
-                name="comment"
-                id="comment"
+                class="form-textarea"
+                name="message"
                 cols="40"
                 rows="10"
                 maxlength="500"
-                placeholder="Write your message here"
+                placeholder="Write your message here..."
                 required
               ></textarea>
-              <div class="error-message error-email-class">
-                Email address should be lower case
-                <span class="email-span">*<b></b></span>
-              </div>
-              <button id="btn-submit-form" class="btn-touch" type="submit">
-                Get In Touch
+              <div id="message-error" class="field-error"></div>
+              
+              <div id="form-status" class="form-status"></div>
+              
+              <button id="submit-btn" class="btn btn-primary" type="submit">
+                <span class="submit-text">Send Message</span>
+                <span class="submit-loader">
+                  <i class="fas fa-spinner fa-spin"></i>
+                </span>
               </button>
             </form>
           </div>
